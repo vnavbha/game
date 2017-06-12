@@ -1,0 +1,4 @@
+{
+	"cmd": ["generate.bat"],
+	"selector": "premake"
+}
