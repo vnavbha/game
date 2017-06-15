@@ -1,4 +1,3 @@
-
 #include "stdafx.h"
 #include "CppUnitTest.h"
 
@@ -10,7 +9,7 @@ namespace UnitTest
 	{
 	public:
 		
-		TEST_METHOD(base))
+		TEST_METHOD(baseMethod)
 		{
 			// TODO: Your test code here
 		}

@@ -30,25 +30,27 @@ end
 
 -- utils
 
-
-
+function get_project_pesudonym(moduleName, projectName)
+    local projectPseudoNym = moduleName .. "." .. projectName
+    return projectPseudoNym
+end
 -- //-----------------------------------------------------------------------
 
 function project_common(moduleName, projectName)
-    local projectPseudoNym = moduleName .. "." .. projectName
+    local projectPseudoNym = get_project_pesudonym(moduleName, projectName)
+
     project(projectPseudoNym)
 
-        local generatedLocation = path.getabsolute(os.getcwd())
-        --print_info("generating " .. generatedLocation)
-        location(generatedLocation)
+    local generatedLocation = path.getabsolute(os.getcwd())
+    --print_info("generating " .. generatedLocation)
+    location(generatedLocation)
 
-        local outDir = path.join(path.getabsolute(TARGET_DIR), projectPseudoNym)
-        targetdir (outDir)
+    local outDir = path.join(path.getabsolute(TARGET_DIR), projectPseudoNym)
+    targetdir (outDir)
 
-        local vpathDir = "../src/" .. moduleName .. "/" .. projectName .. "/*"
-        --print_info("vpaths " .. vpathDir)
-        vpaths { ["*"] = vpathDir }
-
+    local vpathDir = "../src/" .. moduleName .. "/" .. projectName .. "/*"
+    --print_info("vpaths " .. vpathDir)
+    vpaths { ["*"] = vpathDir }
         
 end
 

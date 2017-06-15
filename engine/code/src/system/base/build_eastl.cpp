@@ -1,3 +1,6 @@
+#include "EASTL/internal/config.h"
+#include <memory>
+
 void* operator new[](size_t size, const char* pName, int flags,
 	unsigned debugFlags, const char* file, int line)
 {
@@ -15,8 +18,8 @@ const char* pName, int flags, unsigned debugFlags, const char* file, int line)
 int Vsnprintf8(char8_t* pDestination, size_t n, const char8_t* pFormat, va_list arguments)
 {
 #ifdef _MSC_VER
-	return _vsnprintf(pDestination, n, pFormat, arguments);
+	return _vsnprintf_s(pDestination, n, n, pFormat, arguments);
 #else
-	return vsnprintf(pDestination, n, pFormat, arguments);
+	return _vsnprintf_s(pDestination, n, n, pFormat, arguments);
 #endif
 }	

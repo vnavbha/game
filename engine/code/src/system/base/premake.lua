@@ -1,5 +1,7 @@
-CPP_Library_Project("system", "base")
-COMMON_Dependency("system", "eastl")
+cpp_lib("system", "base")
+links{
+	"system.eastl"
+}
 --vpaths { ["Headers/*"] = "**.h" } - works
 
 

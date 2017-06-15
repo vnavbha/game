@@ -22,5 +22,6 @@ if(_ACTION == "clean") then
 	-- a more thorough clean
 	print_info("cleaning directories")
 	os.rmdir(BUILD_DIR .. "/_obj")
-	os.rmdir(BUILD_DIR .. "/_out")	
+	os.rmdir(BUILD_DIR .. "/_out")
+   os.rmdir(BUILD_DIR .. "/_solutions")
 end

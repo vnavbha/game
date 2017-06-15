@@ -34,24 +34,22 @@ namespace tools.unittestgenerator
 
         static void Main(string[] args)
         {
-            //
-            // test 
-            args = new string[1];
-            args[0] = "C:\\dev\\game\\engine\\code\\src\\system\\base";
-
-            var fullPath = Path.GetFullPath(args[0]);
-
-            //
-
             if (args.Length != 1)
             {
                 ShowUsage();
                 return;
             }
+
+            Console.Write("Creating unit test for {0}", args[0]);
+
+            var fullPath = Path.GetFullPath(args[0]);
+
+            Console.Write("Creating unit test for {0}", fullPath);
+
             var projectPath = args[0];
             var outputPath = Path.Combine(fullPath, "_unittest\\test.cpp");
 
-            if(File.Exists(outputPath))
+            if (File.Exists(outputPath))
             {
                 Console.WriteLine("Unit test already exists at {0}, generation will be skipped to prevent overwriting the unit test", outputPath);
                 //return;
@@ -59,7 +57,7 @@ namespace tools.unittestgenerator
 
             var projectName = Path.GetFileNameWithoutExtension(projectPath);
             var directoryName = new FileInfo(outputPath).Directory.FullName;
-            if(Directory.Exists(directoryName) == false)
+            if (Directory.Exists(directoryName) == false)
             {
                 Directory.CreateDirectory(directoryName);
             }
@@ -67,6 +65,19 @@ namespace tools.unittestgenerator
             var generator = new UnitTest(projectName);
             var text = generator.TransformText();
             File.WriteAllText(outputPath, text);
+
+            var sourcePath = Path.GetFullPath("./copyfiles");
+            Console.WriteLine("Copying files from {0} to {1}", sourcePath, directoryName);
+            string[] files = System.IO.Directory.GetFiles(sourcePath);
+
+            // Copy the files and overwrite destination files if they already exist.
+            foreach (string s in files)
+            {
+                // Use static Path methods to extract only the file name from the path.
+                var fileName = System.IO.Path.GetFileName(s);
+                var destFile = System.IO.Path.Combine(directoryName, fileName);
+                System.IO.File.Copy(s, destFile, false);
+            }
         }
 
         static private void ShowUsage()
