@@ -10,3 +10,4 @@
 
 *.bat eol=crlf
 
+premake/* linguist-vendored
