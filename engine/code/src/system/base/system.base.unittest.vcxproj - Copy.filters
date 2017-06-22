@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_unittest">
+      <UniqueIdentifier>{24FD4837-9067-FDAD-D9A5-AE53454FDB02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_unittest\stdafx.h" />
+    <ClInclude Include="_unittest\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_unittest\test.cpp">
+      <Filter>_unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="_unittest\stdafx.cpp" />
+  </ItemGroup>
+</Project>

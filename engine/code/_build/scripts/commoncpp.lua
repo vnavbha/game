@@ -1,4 +1,5 @@
 dofile "common.lua"
+dofile "libdeps.lua"
 
 -- cpp
 
@@ -7,6 +8,7 @@ dofile "common.lua"
 function cpp_common_includes()
     includedirs(
     { 
+        SRC_DIR,
         SRC_DIR .. "/system/eastl/include"
     })
 end
@@ -82,8 +84,20 @@ function cpp_lib(moduleName, projectName)
     })
     cpp_common_includes()
     kind("StaticLib")
+end
 
-    cpp_create_unittest(moduleName, projectName)
+function cpp_dyn_lib(moduleName, projectName)
+    project_common(moduleName, projectName)
+    objdir(BUILD_DIR .. "/_obj")
+    files({
+        "**.cpp",
+        "**.hpp",
+        "**.h"
+    })
+    cpp_common_includes()
+    kind("SharedLib")
+
+    defines { "BUILD_" .. string.upper(moduleName) .. "_" .. string.upper(projectName)}
 end
 
 -- //--------------------------------------------------------------------------

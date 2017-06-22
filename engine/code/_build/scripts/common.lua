@@ -45,12 +45,16 @@ function project_common(moduleName, projectName)
     --print_info("generating " .. generatedLocation)
     location(generatedLocation)
 
-    local outDir = path.join(path.getabsolute(TARGET_DIR), projectPseudoNym)
+    local outDir = path.getabsolute(TARGET_DIR)
     targetdir (outDir)
 
     local vpathDir = "../src/" .. moduleName .. "/" .. projectName .. "/*"
     --print_info("vpaths " .. vpathDir)
     vpaths { ["*"] = vpathDir }
+
+    libdirs {
+        outDir
+    }
         
 end
 
