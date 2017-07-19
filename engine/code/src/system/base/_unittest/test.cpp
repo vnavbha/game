@@ -7,6 +7,8 @@
 #include <Windows.h>
 #include <tchar.h>
 
+DEFINE_NEW_OPERATORS
+
 //-----------------------------------------------------------------------------
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -81,6 +83,14 @@ namespace UnitTest
 			ZString sExpected = "test_append_append";
 
 			Assert::IsTrue(sTest4 == sExpected);
+
+			wchar_t* channel = L"channel";
+			wchar_t* format = L"%d";
+			//ZString result = ZString().sprintf(ZString(ZString(channel) + ", " + format).c_str(), 2);
+
+
+			ZWString result = ZWString().sprintf(ZWString(ZWString(channel) + L", " + format).c_str());
+			Logger::WriteMessage(result.c_str());
 		}
 
 		TEST_METHOD(EASTLMap)

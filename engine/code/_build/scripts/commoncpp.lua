@@ -60,7 +60,8 @@ function cpp_solution(solutionName)
     flags {"Symbols"}
     defines 
     {
-        "DEBUG", 
+        "DEBUG",
+        "WINDOWS"
     }
 
   configuration("release")
@@ -68,6 +69,7 @@ function cpp_solution(solutionName)
     defines
     {
         "NDEBUG", 
+        "WINDOWS"
     }
   
 end
