@@ -98,11 +98,11 @@ bool ZRenderDevice::InitDevice()
 
 	if (FAILED(hr))
 	{
-		ZTRACE_MSSAGE("renderdeviced3d", "failed to enumerate feature level");
+		ZTRACE_MESSAGE("renderdeviced3d", "failed to enumerate feature level");
 		return false;
 	}
 
-	//ZTRACE_MSSAGE("renderdeviced3d, using feature level" + maxSupportedFeatureLevel);
+	//ZTRACE_MESSAGE("renderdeviced3d, using feature level" + maxSupportedFeatureLevel);
 
 	hr = D3D11CreateDevice(
 		nullptr,
@@ -119,11 +119,11 @@ bool ZRenderDevice::InitDevice()
 
 	if (FAILED(hr))
 	{
-		ZTRACE_MSSAGE("renderdeviced3d", "failed to create device");
+		ZTRACE_MESSAGE("renderdeviced3d", "failed to create device");
 		return false;
 	}
 
-	ZTRACE_MSSAGE("renderdeviced3d", "create device successful");
+	ZTRACE_MESSAGE("renderdeviced3d", "create device successful");
 
 	return true;
 }

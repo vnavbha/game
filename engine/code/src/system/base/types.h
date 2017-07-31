@@ -20,13 +20,15 @@
 
 // ----------------------------------------------------------------------------
 
+typedef unsigned long long uint64;
+typedef long long int64;
+
 typedef unsigned int uint32;
 typedef int int32;
-typedef unsigned char uint8;
 
 typedef float float32;
 
-typedef unsigned char byte;
+typedef unsigned char ubyte; 
 
 //-----------------------------------------------------------------------------
 // Math
@@ -60,9 +62,9 @@ typedef Rect<int> ZRectI;
 // EASTL
 //-----------------------------------------------------------------------------
 
-
 using ZString = eastl::string;
 using ZWString = eastl::wstring;
+using ZStringHash = eastl::hash<ZString>;
 
 template <typename T>
 using TSharedPtr = eastl::shared_ptr<T>;

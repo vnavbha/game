@@ -2,6 +2,7 @@ cpp_app("game", "app")
 links{
 	"system.eastl",
 	"system.base",
+	"system.resource",
 	"runtime.render",
 	"runtime.app",
 	

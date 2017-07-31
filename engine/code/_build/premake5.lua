@@ -15,8 +15,7 @@ print("--------------------------------------------------------------")
 cpp_solution("platform")
 	project_include("system", "eastl")
 	project_include("system", "base")
+	project_include("system", "resource")
 
 	project_include("runtime", "render")
-	project_include("runtime", "app")
-
 	project_include("game", "app")

@@ -545,7 +545,6 @@ improvement at the expense of carrying around more memory.
 #endif /* _WIN32_WCE */
 #endif  /* WIN32 */
 #ifdef WIN32
-#define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <tchar.h>
 #define HAVE_MMAP 1

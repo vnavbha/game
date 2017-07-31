@@ -1,4 +1,4 @@
-cpp_lib("runtime", "app")
+cpp_lib("system", "resource")
 links{
 	"system.eastl",
 	"system.base"

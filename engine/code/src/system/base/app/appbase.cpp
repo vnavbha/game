@@ -1,7 +1,7 @@
 #include "appbase.h"
-#include "runtime/app/appwindow.h"
 #include "runtime/render/renderdevice.h"
 #include "system/base/time/time.h"
+#include "system/base/app/appwindow.h"
 #include "system/base/memory/memory.h"
 #include "system/base/debug/debug.h"
 #include "system/base/subsystem/subsystem.h"
@@ -57,10 +57,6 @@ void ZAppBase::Run()
 bool ZAppBase::Update()
 {
 	SGameTime dummy;
-	if (!m_pWindow->Update(dummy))
-	{
-		return false;
-	}
 	for (auto* pSubSystem : m_aSubSystems)
 	{
 		pSubSystem->Update(dummy);
@@ -78,6 +74,13 @@ void ZAppBase::UnregisterSubSystem(ESubSystems id)
 	m_aSubSystems[id]->Uninit();
 	ZDELETE(m_aSubSystems[id]);
 	m_aSubSystems[id] = nullptr;
+}
+
+void ZAppBase::OnExecutablePathInitialized()
+{
+	ZFilePath exePath = ZFilePath(m_exePath.GetDirectory() + ZFilePath::PathSeparator() + "engine.ini");
+	ZASSERT(exePath.IsValid());
+	m_iniFile.Init(exePath);
 }
 
 ZAppBase* GetApp()

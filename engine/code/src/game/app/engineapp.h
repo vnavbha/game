@@ -1,16 +1,5 @@
-#pragma once
-
-#include "runtime/app/appbase.h"
-
-//-----------------------------------------------------------------------------
-
-class ZEngineApp : public ZAppBase
-{
-public:
-	ZEngineApp();
-	virtual ~ZEngineApp();
-
-protected:
-	virtual void Init();
-	virtual void Uninit();
-};
+#if defined(WINDOWS)
+#include "game/app/_win/engineapp.h"
+#else
+// other renderers here
+#endif

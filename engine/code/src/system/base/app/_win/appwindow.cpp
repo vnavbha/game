@@ -87,7 +87,7 @@ bool ZAppWindow::Init()
 
 	if (m_handle == nullptr)
 	{
-		ZTRACE_MSSAGE("appwindow", "Create window error %lu", GetLastError());
+		ZTRACE_MESSAGE("appwindow", "Create window error %lu", GetLastError());
 		return false;
 	}
 

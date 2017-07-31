@@ -1,7 +1,7 @@
 #include "runtime.render.h"
 #include "renderdevice.h"
 
-#include "runtime/app/appbase.h"
+#include "system/base/app/appbase.h"
 #include "system/base/debug/debug.h"
 
 //-----------------------------------------------------------------------------

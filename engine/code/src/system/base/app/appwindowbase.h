@@ -13,4 +13,6 @@ public:
 	virtual bool Init();
 	virtual void Uninit();
 	virtual bool Update(const SGameTime& gameTime);
+
+private:
 };

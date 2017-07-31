@@ -61,7 +61,8 @@ function cpp_solution(solutionName)
     defines 
     {
         "DEBUG",
-        "WINDOWS"
+        "WINDOWS",
+        "WIN32_LEAN_AND_MEAN"
     }
 
   configuration("release")
@@ -69,7 +70,8 @@ function cpp_solution(solutionName)
     defines
     {
         "NDEBUG", 
-        "WINDOWS"
+        "WINDOWS",
+        "WIN32_LEAN_AND_MEAN"
     }
   
 end

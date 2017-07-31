@@ -3,7 +3,7 @@
 #include "system/base/types.h"
 #include "system/base/debug/debug.h"
 
-#include "runtime/app/appwindow.h"
+#include "system/base/app/appwindow.h"
 
 //-----------------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ bool ZRenderSwapChain::Init(const ZRenderDevice* pDevice)
 	auto it = ZFnFindIf(aSupportedDisplays.begin(), aSupportedDisplays.end(), fnFind);
 	if (it == aSupportedDisplays.end())
 	{
-		ZTRACE_MSSAGE("renderswapchaind3d", "unable to find supported display desc, vsync is disabled");
+		ZTRACE_MESSAGE("renderswapchaind3d", "unable to find supported display desc, vsync is disabled");
 		m_bVsyncEnabled = false;
 	}
 	if (m_bVsyncEnabled)
@@ -89,7 +89,7 @@ bool ZRenderSwapChain::Init(const ZRenderDevice* pDevice)
 
 	if (FAILED(hresult))
 	{
-		ZTRACE_MSSAGE("renderswapchaind3d", "failed to create render swap chain");
+		ZTRACE_MESSAGE("renderswapchaind3d", "failed to create render swap chain");
 		return false;
 	}
 
