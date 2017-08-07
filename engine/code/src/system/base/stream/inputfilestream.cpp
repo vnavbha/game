@@ -45,6 +45,10 @@ bool ZInputFileStream::Read(char* pDestination, uint64 nSize)
 
 bool ZInputFileStream::ReadLine(ZString& sResult)
 {
+	if (m_stream.fail() || m_stream.eof())
+	{
+		return false;
+	}
 	std::string str;
 	std::getline(m_stream, str);
 	sResult = str.c_str();

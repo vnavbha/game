@@ -12,6 +12,7 @@ public:
 	~ZFilePath();
 
 	ZFilePath& operator+= (const ZString& sPath);
+	ZFilePath operator+ (const ZString& sPath);
 
 	bool IsValid() const;
 	const ZString& GetDrive() const;

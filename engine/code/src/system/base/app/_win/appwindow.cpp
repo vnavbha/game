@@ -1,4 +1,5 @@
 #include "appwindow.h"
+#include "system/base/app/appbase.h"
 #include "system/base/debug/debug.h"
 
 //-----------------------------------------------------------------------------
@@ -52,6 +53,10 @@ bool ZAppWindow::Init()
 	m_nHeight = GetSystemMetrics(SM_CXSCREEN);
 	m_nWidth = GetSystemMetrics(SM_CYSCREEN);
 
+	m_bFullScreen = GetApp()->GetApplicationOption("FULLSCREEN", false);
+
+	m_nWidth = GetApp()->GetApplicationOption("RESOLUTION_WIDTH", 800);
+	m_nHeight = GetApp()->GetApplicationOption("RESOLUTION_HEIGHT", 600);
 	// Setup the screen settings depending on whether it is running in full screen or in windowed mode.
 	if (m_bFullScreen)
 	{
@@ -71,10 +76,6 @@ bool ZAppWindow::Init()
 	}
 	else
 	{
-		// If windowed then set it to 800x600 resolution.
-		m_nWidth = 800;
-		m_nHeight = 600;
-
 		// Place the window in the middle of the screen.
 		posX = (GetSystemMetrics(SM_CXSCREEN) - m_nWidth) / 2;
 		posY = (GetSystemMetrics(SM_CYSCREEN) - m_nHeight) / 2;

@@ -27,6 +27,10 @@ ZAppBase::~ZAppBase()
 
 void ZAppBase::Init()
 {
+	ZFilePath exePath = ZFilePath(m_exePath.GetDirectory() + ZFilePath::PathSeparator() + "engine.ini");
+	ZASSERT(exePath.IsValid());
+	m_iniFile.Init(exePath);
+
 	m_pWindow = ZNEW ZAppWindow();
 	m_pWindow->Init();
 
@@ -69,18 +73,16 @@ ZAppWindow* ZAppBase::GetWindow() const
 	return m_pWindow;
 }
 
+const ZFilePath ZAppBase::GetExePath() const
+{
+	return m_exePath;
+}
+
 void ZAppBase::UnregisterSubSystem(ESubSystems id)
 {
 	m_aSubSystems[id]->Uninit();
 	ZDELETE(m_aSubSystems[id]);
 	m_aSubSystems[id] = nullptr;
-}
-
-void ZAppBase::OnExecutablePathInitialized()
-{
-	ZFilePath exePath = ZFilePath(m_exePath.GetDirectory() + ZFilePath::PathSeparator() + "engine.ini");
-	ZASSERT(exePath.IsValid());
-	m_iniFile.Init(exePath);
 }
 
 ZAppBase* GetApp()

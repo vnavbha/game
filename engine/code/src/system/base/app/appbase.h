@@ -28,14 +28,15 @@ public:
 	template<typename T>
 	T* GetSubSystem(ESubSystems id) const;
 
+	template <class T>
+	T GetApplicationOption(const ZString& sKey, const T& valDefault = T());
+
 	ZAppWindow* GetWindow() const;
-	
+	const ZFilePath GetExePath() const;
+
 	template<typename T>
 	bool RegisterSubSystem(ESubSystems id);
 	void UnregisterSubSystem(ESubSystems id);
-
-protected:
-	void OnExecutablePathInitialized();
 
 protected:
 
@@ -55,6 +56,55 @@ template<typename T>
 T* ZAppBase::GetSubSystem(ESubSystems id) const
 {
 	return static_cast<T*>(m_aSubSystems[id]);
+}
+
+template <>
+inline ZString ZAppBase::GetApplicationOption(const ZString& sKey, const ZString& valDefault)
+{
+	ZString sOption = m_iniFile.GetOption(sKey);
+	if (sOption.empty())
+	{
+		return valDefault;
+	}
+	return sOption;
+}
+
+template <>
+inline int32 ZAppBase::GetApplicationOption(const ZString& sKey, const int32& valDefault)
+{
+	ZString sOption = m_iniFile.GetOption(sKey);
+	if (sOption.empty())
+	{
+		return valDefault;
+	}
+
+	return ZFnToInt(sOption.c_str());
+}
+
+template <>
+inline bool ZAppBase::GetApplicationOption(const ZString& sKey, const bool& valDefault)
+{
+	ZString sOption = m_iniFile.GetOption(sKey);
+	if (sOption.empty())
+	{
+		return valDefault;
+	}
+
+	if (ZFnICmp(sOption.c_str(), "true"))
+	{
+		return true;
+	}
+	if (ZFnICmp(sOption.c_str(), "false"))
+	{
+		return false;
+	}
+
+	int32 nValue = ZFnToInt(sOption.c_str());
+	if (nValue == 1)
+	{
+		return true;
+	}
+	return false;
 }
 
 template<typename T>

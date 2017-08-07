@@ -41,16 +41,24 @@
 			"file": "code/_build/scripts/commoncpp.lua",
 			"settings":
 			{
-				"buffer_size": 2613,
+				"buffer_size": 2729,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
+			"file": "code/_build/scripts/configure.lua",
 			"settings":
 			{
-				"buffer_size": 24631,
+				"buffer_size": 624,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n  \n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
+			"settings":
+			{
+				"buffer_size": 45116,
 				"line_ending": "Windows",
 				"name": "Package Control Messages",
 				"scratch": true
@@ -66,19 +74,10 @@
 			}
 		},
 		{
-			"file": "code/src/runtime/app/premake.lua",
-			"settings":
-			{
-				"buffer_size": 67,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "code/src/game/app/premake.lua",
 			"settings":
 			{
-				"buffer_size": 174,
+				"buffer_size": 264,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -96,7 +95,26 @@
 			"file": "code/_build/premake5.lua",
 			"settings":
 			{
-				"buffer_size": 718,
+				"buffer_size": 682,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 1395 files for \"WINDOWS\"\"\n\nC:\\dev\\game\\engine\\code\\_build\\_solutions\\platform.VC.VC.opendb:\n    ERROR: Unable to open file\n\nC:\\dev\\game\\engine\\code\\_build\\scripts\\commoncpp.lua:\n   62      {\n   63          \"DEBUG\",\n   64:         \"WINDOWS\"\n   65      }\n   66  \n   ..\n   70      {\n   71          \"NDEBUG\", \n   72:         \"WINDOWS\"\n   73      }\n   74    \n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\benchmark\\source\\EASTLBenchmark.h:\n   55  \tstruct Environment\n   56  \t{\n   57: \t\teastl::string8 msPlatform;       // Name of test platform (e.g. \"Windows\")\n   58  \t\teastl::string8 msSTLName1;       // Name of competitor #1 (e.g. \"EASTL\").\n   59  \t\teastl::string8 msSTLName2;       // Name of competitor #2 (e.g. \"MS STL\").\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\include\\EABase\\config\\eaplatform.h:\n  416  \t#undef  EA_PLATFORM_WINDOWS\n  417  \t#define EA_PLATFORM_WINDOWS 1\n  418: \t#define EA_PLATFORM_NAME \"Windows\"\n  419  \t#ifdef _WIN64 // VC++ defines both _WIN32 and _WIN64 when compiling for Win64.\n  420  \t\t#define EA_PLATFORM_WIN64 1\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\packages\\EABase\\include\\Common\\EABase\\config\\eaplatform.h:\n  416  \t#undef  EA_PLATFORM_WINDOWS\n  417  \t#define EA_PLATFORM_WINDOWS 1\n  418: \t#define EA_PLATFORM_NAME \"Windows\"\n  419  \t#ifdef _WIN64 // VC++ defines both _WIN32 and _WIN64 when compiling for Win64.\n  420  \t\t#define EA_PLATFORM_WIN64 1\n\nC:\\dev\\game\\engine\\tools\\premake\\premake4.lua:\n   54  \t\t\tdefines\t{\"_CRT_SECURE_NO_DEPRECATE\" }\n   55  \n   56: \t\tconfiguration \"windows\"\n   57  \t\t\tlinks { \"ole32\" }\n   58  \n\nC:\\dev\\game\\engine\\tools\\premake\\premake5.lua:\n  116  \t\t\tdefines     { \"_CRT_SECURE_NO_DEPRECATE\", \"_CRT_SECURE_NO_WARNINGS\", \"_CRT_NONSTDC_NO_WARNINGS\" }\n  117  \n  118: \t\tfilter { \"system:windows\", \"configurations:Release\" }\n  119  \t\t\tflags       { \"NoIncrementalLink\", \"LinkTimeOptimization\" }\n  120  \n  ...\n  159  \t\t\ttargetdir   \"bin/release\"\n  160  \n  161: \t\tfilter \"system:windows\"\n  162  \t\t\tlinks       { \"ole32\", \"ws2_32\" }\n  163  \n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2005\\zip-lib.vcproj:\n   45  \t\t\t\tAdditionalIncludeDirectories=\"..\\..\\contrib\\libzip\\include\"\n   46  \t\t\t\tWholeProgramOptimization=\"true\"\n   47: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n   48  \t\t\t\tBufferSecurityCheck=\"false\"\n   49  \t\t\t\tStringPooling=\"true\"\n   ..\n   60  \t\t\t<Tool\n   61  \t\t\t\tName=\"VCResourceCompilerTool\"\n   62: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n   63  \t\t\t\tAdditionalIncludeDirectories=\"..\\..\\contrib\\libzip\\include\"\n   64  \t\t\t/>\n   ..\n  113  \t\t\t\tOptimization=\"0\"\n  114  \t\t\t\tAdditionalIncludeDirectories=\"..\\..\\contrib\\libzip\\include\"\n  115: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n  116  \t\t\t\tBasicRuntimeChecks=\"3\"\n  117  \t\t\t\tRuntimeLibrary=\"1\"\n  ...\n  127  \t\t\t<Tool\n  128  \t\t\t\tName=\"VCResourceCompilerTool\"\n  129: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n  130  \t\t\t\tAdditionalIncludeDirectories=\"..\\..\\contrib\\libzip\\include\"\n  131  \t\t\t/>\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2005\\zlib-lib.vcproj:\n   44  \t\t\t\tOptimization=\"3\"\n   45  \t\t\t\tWholeProgramOptimization=\"true\"\n   46: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n   47  \t\t\t\tBufferSecurityCheck=\"false\"\n   48  \t\t\t\tStringPooling=\"true\"\n   ..\n   59  \t\t\t<Tool\n   60  \t\t\t\tName=\"VCResourceCompilerTool\"\n   61: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n   62  \t\t\t/>\n   63  \t\t\t<Tool\n   ..\n  110  \t\t\t\tAdditionalOptions=\"/MP\"\n  111  \t\t\t\tOptimization=\"0\"\n  112: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n  113  \t\t\t\tBasicRuntimeChecks=\"3\"\n  114  \t\t\t\tRuntimeLibrary=\"1\"\n  ...\n  124  \t\t\t<Tool\n  125  \t\t\t\tName=\"VCResourceCompilerTool\"\n  126: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n  127  \t\t\t/>\n  128  \t\t\t<Tool\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2008\\zip-lib.vcproj:\n   45  \t\t\t\tAdditionalIncludeDirectories=\"..\\..\\contrib\\libzip\\include\"\n   46  \t\t\t\tWholeProgramOptimization=\"true\"\n   47: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n   48  \t\t\t\tBufferSecurityCheck=\"false\"\n   49  \t\t\t\tStringPooling=\"true\"\n   ..\n   60  \t\t\t<Tool\n   61  \t\t\t\tName=\"VCResourceCompilerTool\"\n   62: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n   63  \t\t\t\tAdditionalIncludeDirectories=\"..\\..\\contrib\\libzip\\include\"\n   64  \t\t\t/>\n   ..\n  113  \t\t\t\tOptimization=\"0\"\n  114  \t\t\t\tAdditionalIncludeDirectories=\"..\\..\\contrib\\libzip\\include\"\n  115: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n  116  \t\t\t\tBasicRuntimeChecks=\"3\"\n  117  \t\t\t\tRuntimeLibrary=\"1\"\n  ...\n  127  \t\t\t<Tool\n  128  \t\t\t\tName=\"VCResourceCompilerTool\"\n  129: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n  130  \t\t\t\tAdditionalIncludeDirectories=\"..\\..\\contrib\\libzip\\include\"\n  131  \t\t\t/>\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2008\\zlib-lib.vcproj:\n   44  \t\t\t\tOptimization=\"3\"\n   45  \t\t\t\tWholeProgramOptimization=\"true\"\n   46: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n   47  \t\t\t\tBufferSecurityCheck=\"false\"\n   48  \t\t\t\tStringPooling=\"true\"\n   ..\n   59  \t\t\t<Tool\n   60  \t\t\t\tName=\"VCResourceCompilerTool\"\n   61: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n   62  \t\t\t/>\n   63  \t\t\t<Tool\n   ..\n  110  \t\t\t\tAdditionalOptions=\"/MP\"\n  111  \t\t\t\tOptimization=\"0\"\n  112: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n  113  \t\t\t\tBasicRuntimeChecks=\"3\"\n  114  \t\t\t\tRuntimeLibrary=\"1\"\n  ...\n  124  \t\t\t<Tool\n  125  \t\t\t\tName=\"VCResourceCompilerTool\"\n  126: \t\t\t\tPreprocessorDefinitions=\"PREMAKE_COMPRESSION;CURL_STATICLIB;PREMAKE_CURL;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;N_FSEEKO;_WINDOWS\"\n  127  \t\t\t/>\n  128  \t\t\t<Tool\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\premake5.lua:\n   12  \t}\n   13  \n   14: \tfilter { \"system:windows\" }\n   15  \t\tdefines { \"WIN32\" }\n   16  \t\tdefines { \"USE_SCHANNEL\", \"USE_WINDOWS_SSPI\" }\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\config-win32.h:\n  749  \n  750  /* cpu-machine-OS */\n  751: #define OS \"Windows\"\n  752  \n  753  /* Name of package */\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\libzip\\premake5.lua:\n   15  \t\tdefines { \"HAVE_SSIZE_T_LIBZIP\", \"HAVE_CONFIG_H\" }\n   16  \n   17: \tfilter \"system:windows\"\n   18: \t\tdefines { \"_WINDOWS\" }\n   19  \n   20  \tfilter \"system:macosx\"\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\zlib\\premake5.lua:\n   11  \t}\n   12  \n   13: \tfilter \"system:windows\"\n   14: \t\tdefines { \"_WINDOWS\" }\n   15  \n   16: \tfilter \"system:not windows\"\n   17  \t\tdefines { 'HAVE_UNISTD_H' }\n   18  \n\nC:\\dev\\game\\engine\\tools\\premake\\modules\\codelite\\tests\\test_codelite_config.lua:\n  132  \n  133  \tfunction suite.OnProjectCfg_General()\n  134: \t\tsystem \"Windows\"\n  135  \t\tprepare()\n  136  \t\tcodelite.project.general(cfg)\n\nC:\\dev\\game\\engine\\tools\\premake\\modules\\d\\tools\\dmd.lua:\n  194  \t-- if we are compiling on windows, we need to specialise to OPTLINK as the linker\n  195  -- OR!!!\t\t\tif cfg.system ~= premake.WINDOWS then\n  196: \tif string.match( os.getversion().description, \"Windows\" ) ~= nil then\n  197  \t\t-- TODO: on windows, we may use OPTLINK or MSLINK (for Win64)...\n  198  --\t\tprintf(\"TODO: select proper linker for 32/64 bit code\")\n\nC:\\dev\\game\\engine\\tools\\premake\\modules\\d\\tools\\gdc.lua:\n  170  \t\t\tSharedLib = function(cfg)\n  171  \t\t\t\tlocal r = { iif(cfg.system == premake.MACOSX, \"-dynamiclib\", \"-shared\") }\n  172: \t\t\t\tif cfg.system == \"windows\" and not cfg.flags.NoImportLib then\n  173  \t\t\t\t\ttable.insert(r, '-Wl,--out-implib=\"' .. cfg.linktarget.relpath .. '\"')\n  174  \t\t\t\tend\n  ...\n  176  \t\t\tend,\n  177  \t\t\tWindowedApp = function(cfg)\n  178: \t\t\t\tif cfg.system == premake.WINDOWS then return \"-mwindows\" end\n  179  \t\t\tend,\n  180  \t\t},\n\nC:\\dev\\game\\engine\\tools\\premake\\modules\\monodevelop\\tests\\test_config.lua:\n   52  \n   53  \tfunction suite.OnProject_OutputName()\n   54: \t\tsystem \"Windows\"\n   55  \t\tprepare()\n   56  \t\tmonodevelop.cproj.outputName(cfg)\n\nC:\\dev\\game\\engine\\tools\\premake\\scripts\\package.lua:\n   61  \tlocal pkgExt = \".zip\"\n   62  \n   63: \tif not os.is(\"windows\") and kind == \"binary\" then\n   64  \t\tpkgExt = \".tar.gz\"\n   65  \tend\n   ..\n  181  \n  182  \tlocal name = string.format(\"%s-%s%s\", pkgName, os.get(), pkgExt)\n  183: \tif os.is(\"windows\") then\n  184  \t\texecQuiet(\"zip -9 %s premake5.exe\", name)\n  185  \telse\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\_premake_init.lua:\n  990  \t\t\t\"solaris\",\n  991  \t\t\t\"wii\",\n  992: \t\t\t\"windows\",\n  993  \t\t\t\"xbox360\",\n  994  \t\t},\n  ...\n 1397  \t\t\t{ \"macosx\",   \"Apple Mac OS X\" },\n 1398  \t\t\t{ \"solaris\",  \"Solaris\" },\n 1399: \t\t\t{ \"windows\",  \"Microsoft Windows\" },\n 1400  \t\t}\n 1401  \t}\n ....\n 1477  \t\timplibextension \".dll\"\n 1478  \n 1479: \tfilter { \"kind:SharedLib\", \"system:not Windows\" }\n 1480  \t\tpic \"On\"\n 1481  \n\nC:\\dev\\game\\engine\\tools\\premake\\src\\actions\\make\\make_csharp.lua:\n  201  \t\t_p('endif')\n  202  \n  203: \t\tlocal sep = os.is(\"windows\") and \"\\\\\" or \"/\"\n  204  \t\tlocal tr = project.getsourcetree(prj)\n  205  \t\tpremake.tree.traverse(tr, {\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\actions\\vstudio\\vs2005.lua:\n   98  \t\t-- Visual Studio always uses Windows path and naming conventions\n   99  \n  100: \t\tos = \"windows\",\n  101  \n  102  \t\t-- The capabilities of this action\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\actions\\vstudio\\vs2008.lua:\n   23  \t\t-- Visual Studio always uses Windows path and naming conventions\n   24  \n   25: \t\tos = \"windows\",\n   26  \n   27  \t\t-- The capabilities of this action\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\actions\\vstudio\\vs2010.lua:\n  116  \t\t-- Visual Studio always uses Windows path and naming conventions\n  117  \n  118: \t\tos = \"windows\",\n  119  \n  120  \t\t-- The capabilities of this action\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\actions\\vstudio\\vs2010_vcxproj.lua:\n 1892  \tfunction m.subSystem(cfg)\n 1893  \t\tif cfg.system ~= p.XBOX360 then\n 1894: \t\t\tlocal subsystem = iif(cfg.kind == p.CONSOLEAPP, \"Console\", \"Windows\")\n 1895  \t\t\tm.element(\"SubSystem\", nil, subsystem)\n 1896  \t\tend\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\actions\\vstudio\\vs2012.lua:\n   25  \t\t-- Visual Studio always uses Windows path and naming conventions\n   26  \n   27: \t\tos = \"windows\",\n   28  \n   29  \t\t-- The capabilities of this action\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\actions\\vstudio\\vs2013.lua:\n   27  \t\t-- Visual Studio always uses Windows path and naming conventions\n   28  \n   29: \t\tos = \"windows\",\n   30  \n   31  \t\t-- The capabilities of this action\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\actions\\vstudio\\vs2015.lua:\n   27  \t\t-- Visual Studio always uses Windows path and naming conventions\n   28  \n   29: \t\tos = \"windows\",\n   30  \n   31  \t\t-- The capabilities of this action\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\base\\_foundation.lua:\n   51  \tpremake.UTILITY     = \"Utility\"\n   52  \tpremake.WINDOWEDAPP = \"WindowedApp\"\n   53: \tpremake.WINDOWS     = \"windows\"\n   54  \tpremake.X86         = \"x86\"\n   55  \tpremake.X86_64      = \"x86_64\"\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\base\\os.lua:\n   71  \n   72  \t\t-- assemble a search path, depending on the platform\n   73: \t\tif os.is(\"windows\") then\n   74  \t\t\tformats = { \"%s.dll\", \"%s\" }\n   75  \t\t\tpath = os.getenv(\"PATH\") or \"\"\n   ..\n  221  \t\t\t-- Identify the system\n  222  \t\t\tlocal arch\n  223: \t\t\tif _OS == \"windows\" then\n  224  \t\t\t\tarch = os.getenv(\"PROCESSOR_ARCHITECTURE\")\n  225  \t\t\telseif _OS == \"macosx\" then\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\host\\os_getversion.c:\n  160  \telse\n  161  \t{\n  162: \t\tinfo->description = \"Windows\";\n  163  \t}\n  164  }\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\host\\path_translate.c:\n   42  \n   43  \t\t// Use target OS separator\n   44: \t\tif (strcmp(os, \"windows\") == 0) {\n   45  \t\t\tsep = \"\\\\\";\n   46  \t\t}\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\host\\premake.h:\n   39  #else\n   40  #define PLATFORM_WINDOWS  (1)\n   41: #define PLATFORM_STRING   \"windows\"\n   42  #endif\n   43  \n\nC:\\dev\\game\\engine\\tools\\premake\\src\\tools\\clang.lua:\n  188  \t\t\tSharedLib = function(cfg)\n  189  \t\t\t\tlocal r = { iif(cfg.system == premake.MACOSX, \"-dynamiclib\", \"-shared\") }\n  190: \t\t\t\tif cfg.system == \"windows\" and not cfg.flags.NoImportLib then\n  191  \t\t\t\t\ttable.insert(r, '-Wl,--out-implib=\"' .. cfg.linktarget.relpath .. '\"')\n  192  \t\t\t\tend\n  ...\n  194  \t\t\tend,\n  195  \t\t\tWindowedApp = function(cfg)\n  196: \t\t\t\tif cfg.system == premake.WINDOWS then return \"-mwindows\" end\n  197  \t\t\tend,\n  198  \t\t},\n\nC:\\dev\\game\\engine\\tools\\premake\\src\\tools\\gcc.lua:\n  213  \t\t\tSharedLib = function(cfg)\n  214  \t\t\t\tlocal r = { iif(cfg.system == premake.MACOSX, \"-dynamiclib\", \"-shared\") }\n  215: \t\t\t\tif cfg.system == \"windows\" and not cfg.flags.NoImportLib then\n  216  \t\t\t\t\ttable.insert(r, '-Wl,--out-implib=\"' .. cfg.linktarget.relpath .. '\"')\n  217  \t\t\t\tend\n  ...\n  219  \t\t\tend,\n  220  \t\t\tWindowedApp = function(cfg)\n  221: \t\t\t\tif cfg.system == premake.WINDOWS then return \"-mwindows\" end\n  222  \t\t\tend,\n  223  \t\t},\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\actions\\make\\cs\\test_response.lua:\n   73  \n   74  \tfunction suite.listResponseRulesWindows()\n   75: \t\t_OS = \"windows\"\n   76  \t\tsuite.listResponseRules()\n   77  \t\ttest.capture [[\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\actions\\vstudio\\cs2005\\test_platform_groups.lua:\n   97  \tfunction suite.onArbitrary64bitPlatform()\n   98  \t\tplatforms \"Win64\"\n   99: \t\tsystem \"Windows\"\n  100  \t\tarchitecture \"x86_64\"\n  101  \t\tprepare(\"Win64\")\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\actions\\vstudio\\sln2005\\test_platforms.lua:\n  624  \n  625  \tfunction suite.sortsByBuildCfgAndPlatform()\n  626: \t\tplatforms { \"Windows\", \"Linux\" }\n  627  \t\tproject \"MyProject\"\n  628  \t\tprepare()\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\actions\\vstudio\\vc200x\\test_project.lua:\n  116  \tfunction suite.includeKeyword_onMixedConfigs()\n  117  \t\tfilter \"Debug\"\n  118: \t\t\tsystem \"Windows\"\n  119  \t\tfilter \"Release\"\n  120  \t\t\tsystem \"Linux\"\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\actions\\vstudio\\vc2010\\test_globals.lua:\n  114  \tfunction suite.includeKeyword_onMixedConfigs()\n  115  \t\tfilter \"Debug\"\n  116: \t\t\tsystem \"Windows\"\n  117  \t\tfilter \"Release\"\n  118  \t\t\tsystem \"Linux\"\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\base\\test_configset.lua:\n   68  \tfunction suite.canRoundtrip_onSimpleTermMatch()\n   69  \t\tlocal f = field.get(\"targetextension\")\n   70: \t\tconfigset.addblock(cset, { \"Windows\" })\n   71  \t\tconfigset.store(cset, f, \".dll\")\n   72: \t\ttest.isequal(\".dll\", configset.fetch(cset, f, { \"windows\" }))\n   73  \tend\n   74  \n   ..\n   82  \t\tlocal f = field.get(\"targetextension\")\n   83  \t\tconfigset.store(cset, f, \".so\")\n   84: \t\tconfigset.addblock(cset, { \"Windows\" })\n   85  \t\tconfigset.store(cset, f, \".dll\")\n   86  \t\ttest.isequal(\".so\", configset.fetch(cset, f, { \"linux\" }))\n   ..\n  140  \t\tlocal f = field.get(\"buildoptions\")\n  141  \t\tconfigset.store(cset, f, \"v1\")\n  142: \t\tconfigset.addblock(cset, { \"windows\" })\n  143  \t\tconfigset.store(cset, f, \"v2\")\n  144: \t\ttest.isequal({\"v1\", \"v2\"}, configset.fetch(cset, f, {\"windows\"}))\n  145  \tend\n  146  \n  ...\n  154  \t\tconfigset.store(cset, f, \"v1\")\n  155  \t\tconfigset.store(cset, f, \"v2\")\n  156: \t\ttest.isequal({\"v1\", \"v2\"}, configset.fetch(cset, f, {\"windows\"}))\n  157  \tend\n  158  \n  ...\n  208  \t\tlocal f = field.get(\"configmap\")\n  209  \t\tconfigset.store(cset, f, { Debug=\"Debug\", Release=\"Release\" })\n  210: \t\tconfigset.addblock(cset, { \"windows\" })\n  211  \t\tconfigset.store(cset, f, { Profile=\"Profile\" })\n  212: \t\tlocal x = configset.fetch(cset, f, {\"windows\"})\n  213  \t\ttest.istrue(x[1].Debug and x[1].Release and x[2].Profile)\n  214  \tend\n  ...\n  223  \t\tconfigset.store(cset, f, { Debug=\"Debug\", Release=\"Release\" })\n  224  \t\tconfigset.store(cset, f, { Profile=\"Profile\" })\n  225: \t\tlocal x = configset.fetch(cset, f, {\"windows\"})\n  226  \t\ttest.istrue(x[1].Debug and x[1].Release and x[2].Profile)\n  227  \tend\n  ...\n  235  \t\tlocal f = field.get(\"configmap\")\n  236  \t\tconfigset.store(cset, f, { Debug=\"Debug\" })\n  237: \t\tconfigset.addblock(cset, { \"windows\" })\n  238  \t\tconfigset.store(cset, f, { Debug=\"Development\" })\n  239: \t\tlocal x = configset.fetch(cset, f, {\"windows\"})\n  240  \t\ttest.isequal({\"Development\"}, x[2].Debug)\n  241  \tend\n  ...\n  245  \t\tconfigset.store(cset, f, { Debug=\"Debug\" })\n  246  \t\tconfigset.store(cset, f, { Debug=\"Development\" })\n  247: \t\tlocal x = configset.fetch(cset, f, {\"windows\"})\n  248  \t\ttest.isequal({\"Development\"}, x[2].Debug)\n  249  \tend\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\base\\test_criteria.lua:\n   23  \tfunction suite.matches_alwaysTrue_onNoFilterTerms()\n   24  \t\tcrit = criteria.new {}\n   25: \t\ttest.istrue(criteria.matches(crit, { configurations=\"Debug\", system=\"Windows\" }))\n   26  \tend\n   27  \n   ..\n   32  \n   33  \tfunction suite.matches_fails_onMissingContext()\n   34: \t\tcrit = criteria.new { \"system:Windows\", \"architecture:x86\" }\n   35: \t\ttest.isfalse(criteria.matches(crit, { configurations=\"Debug\", system=\"Windows\" }))\n   36  \tend\n   37  \n   ..\n   62  \n   63  \tfunction suite.matches_fails_onMatchWithNotModifier_afterPrefix()\n   64: \t\tcrit = criteria.new { \"system:not windows\" }\n   65: \t\ttest.isfalse(criteria.matches(crit, { system=\"windows\" }))\n   66  \tend\n   67  \n   68  \tfunction suite.matches_fails_onMatchWithNotModifier_beforePrefix()\n   69: \t\tcrit = criteria.new { \"not system:windows\" }\n   70: \t\ttest.isfalse(criteria.matches(crit, { system=\"windows\" }))\n   71  \tend\n   72  \n   73  \tfunction suite.matches_passes_onMissWithNotModifier_afterPrefix()\n   74: \t\tcrit = criteria.new { \"system:not windows\" }\n   75  \t\ttest.istrue(criteria.matches(crit, { system=\"linux\" }))\n   76  \tend\n   77  \n   78  \tfunction suite.matches_passes_onMissWithNotModifier_beforePrefix()\n   79: \t\tcrit = criteria.new { \"not system:windows\" }\n   80  \t\ttest.istrue(criteria.matches(crit, { system=\"linux\" }))\n   81  \tend\n   ..\n   93  \tfunction suite.matches_passes_onFirstOrTermMatched()\n   94  \t\tcrit = criteria.new { \"system:windows or linux\" }\n   95: \t\ttest.istrue(criteria.matches(crit, { system=\"windows\" }))\n   96  \tend\n   97  \n   ..\n  113  \tfunction suite.matches_passes_onMixedPrefixes_firstTermMatched_projectContext()\n  114  \t\tcrit = criteria.new { \"system:windows or files:core*\" }\n  115: \t\ttest.istrue(criteria.matches(crit, { system=\"windows\" }))\n  116  \tend\n  117  \n  118  \tfunction suite.matches_fails_onMixedPrefixes_firstTermMatched_fileContext()\n  119  \t\tcrit = criteria.new { \"system:windows or files:core*\" }\n  120: \t\ttest.isfalse(criteria.matches(crit, { system=\"windows\", files=\"hello.cpp\" }))\n  121  \tend\n  122  \n  ...\n  138  \tfunction suite.matches_passes_onNotOrMatchesFirst()\n  139  \t\tcrit = criteria.new { \"system:not windows or linux\" }\n  140: \t\ttest.isfalse(criteria.matches(crit, { system=\"windows\" }))\n  141  \tend\n  142  \n  ...\n  162  \n  163  \tfunction suite.matches_passes_onFilenameAndMatchingPattern()\n  164: \t\tcrit = criteria.new { \"files:**.c\", \"system:windows\" }\n  165: \t\ttest.istrue(criteria.matches(crit, { system=\"windows\", files=\"hello.c\" }))\n  166  \tend\n  167  \n  168  \tfunction suite.matches_fails_onFilenameAndNoMatchingPattern()\n  169: \t\tcrit = criteria.new { \"system:windows\" }\n  170: \t\ttest.isfalse(criteria.matches(crit, { system=\"windows\", files=\"hello.c\" }))\n  171  \tend\n  172  \n  ...\n  177  \n  178  \tfunction suite.matches_passes_onFilenameMissAndNotModifier()\n  179: \t\tcrit = criteria.new { \"files:not **.c\", \"system:windows\" }\n  180: \t\ttest.istrue(criteria.matches(crit, { system=\"windows\", files=\"hello.h\" }))\n  181  \tend\n  182  \n  183  \tfunction suite.matches_fails_onFilenameHitAndNotModifier()\n  184: \t\tcrit = criteria.new { \"files:not **.c\", \"system:windows\" }\n  185: \t\ttest.isfalse(criteria.matches(crit, { system=\"windows\", files=\"hello.c\" }))\n  186  \tend\n  187  \n  ...\n  235  \n  236  \tfunction suite.fails_onNotMatch_Unprefixed()\n  237: \t\tcrit = criteria.new({ \"not windows\" }, true)\n  238: \t\ttest.isfalse(criteria.matches(crit, { \"windows\" }))\n  239  \tend\n  240  \n  241  \tfunction suite.passes_onNotUnmatched_Unprefixed()\n  242: \t\tcrit = criteria.new({ \"not windows\" }, true)\n  243  \t\ttest.istrue(criteria.matches(crit, { \"linux\" }))\n  244  \tend\n  ...\n  246  \tfunction suite.passes_onFirstOrTermMatched_Unprefixed()\n  247  \t\tcrit = criteria.new({ \"windows or linux\" }, true)\n  248: \t\ttest.istrue(criteria.matches(crit, { \"windows\" }))\n  249  \tend\n  250  \n  ...\n  266  \tfunction suite.passes_onNotOrMatchesFirst_Unprefixed()\n  267  \t\tcrit = criteria.new({ \"not windows or linux\" }, true)\n  268: \t\ttest.isfalse(criteria.matches(crit, { \"windows\" }))\n  269  \tend\n  270  \n  ...\n  280  \n  281  \tfunction suite.passes_onFilenameAndMatchingPattern_Unprefixed()\n  282: \t\tcrit = criteria.new({ \"**.c\", \"windows\" }, true)\n  283: \t\ttest.istrue(criteria.matches(crit, { system=\"windows\", files=\"hello.c\" }))\n  284  \tend\n  285  \n  286  \tfunction suite.fails_onFilenameAndNoMatchingPattern_Unprefixed()\n  287: \t\tcrit = criteria.new({ \"windows\" }, true)\n  288: \t\ttest.isfalse(criteria.matches(crit, { system=\"windows\", files=\"hello.c\" }))\n  289  \tend\n  290  \n  291  \tfunction suite.fails_onFilenameAndNotModifier_Unprefixed()\n  292  \t\tcrit = criteria.new({ \"not linux\" }, true)\n  293: \t\ttest.isfalse(criteria.matches(crit, { system=\"windows\", files=\"hello.c\" }))\n  294  \tend\n  295  \n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\base\\test_os.lua:\n   24  \n   25  \tfunction suite.findlib_FindSystemLib()\n   26: \t\tif os.is(\"windows\") then\n   27  \t\t\ttest.istrue(os.findlib(\"user32\"))\n   28  \t\telseif os.is(\"haiku\") then\n   ..\n  183  \n  184  \tfunction suite.translateCommand_windowsCopyNoDst()\n  185: \t\ttest.isequal('IF EXIST a\\\\ (xcopy /Q /E /Y /I a > nul) ELSE (xcopy /Q /Y /I a > nul)', os.translateCommands('{COPY} a', \"windows\"))\n  186  \tend\n  187  \n  188  \tfunction suite.translateCommand_windowsCopyNoDst_ExtraSpace()\n  189: \t\ttest.isequal('IF EXIST a\\\\ (xcopy /Q /E /Y /I a  > nul) ELSE (xcopy /Q /Y /I a  > nul)', os.translateCommands('{COPY} a ', \"windows\"))\n  190  \tend\n  191  \n  192  \tfunction suite.translateCommand_windowsCopyNoQuotes()\n  193: \t\ttest.isequal('IF EXIST a\\\\ (xcopy /Q /E /Y /I a b > nul) ELSE (xcopy /Q /Y /I a b > nul)', os.translateCommands('{COPY} a b', \"windows\"))\n  194  \tend\n  195  \n  196  \tfunction suite.translateCommand_windowsCopyNoQuotes_ExtraSpace()\n  197: \t\ttest.isequal('IF EXIST a\\\\ (xcopy /Q /E /Y /I a b  > nul) ELSE (xcopy /Q /Y /I a b  > nul)', os.translateCommands('{COPY} a b ', \"windows\"))\n  198  \tend\n  199  \n  200  \tfunction suite.translateCommand_windowsCopyQuotes()\n  201: \t\ttest.isequal('IF EXIST \"a a\"\\\\ (xcopy /Q /E /Y /I \"a a\" \"b\" > nul) ELSE (xcopy /Q /Y /I \"a a\" \"b\" > nul)', os.translateCommands('{COPY} \"a a\" \"b\"', \"windows\"))\n  202  \tend\n  203  \n  204  \tfunction suite.translateCommand_windowsCopyQuotes_ExtraSpace()\n  205: \t\ttest.isequal('IF EXIST \"a a\"\\\\ (xcopy /Q /E /Y /I \"a a\" \"b\"  > nul) ELSE (xcopy /Q /Y /I \"a a\" \"b\"  > nul)', os.translateCommands('{COPY} \"a a\" \"b\" ', \"windows\"))\n  206  \tend\n  207  \n  208  \tfunction suite.translateCommand_windowsCopyNoQuotesDst()\n  209: \t\ttest.isequal('IF EXIST \"a a\"\\\\ (xcopy /Q /E /Y /I \"a a\" b > nul) ELSE (xcopy /Q /Y /I \"a a\" b > nul)', os.translateCommands('{COPY} \"a a\" b', \"windows\"))\n  210  \tend\n  211  \n  212  \tfunction suite.translateCommand_windowsCopyNoQuotesDst_ExtraSpace()\n  213: \t\ttest.isequal('IF EXIST \"a a\"\\\\ (xcopy /Q /E /Y /I \"a a\" b  > nul) ELSE (xcopy /Q /Y /I \"a a\" b  > nul)', os.translateCommands('{COPY} \"a a\" b ', \"windows\"))\n  214  \tend\n  215  \n  216  \tfunction suite.translateCommand_windowsCopyNoQuotesSrc()\n  217: \t\ttest.isequal('IF EXIST a\\\\ (xcopy /Q /E /Y /I a \"b\" > nul) ELSE (xcopy /Q /Y /I a \"b\" > nul)', os.translateCommands('{COPY} a \"b\"', \"windows\"))\n  218  \tend\n  219  \n  220  \tfunction suite.translateCommand_windowsCopyNoQuotesSrc_ExtraSpace()\n  221: \t\ttest.isequal('IF EXIST a\\\\ (xcopy /Q /E /Y /I a \"b\"  > nul) ELSE (xcopy /Q /Y /I a \"b\"  > nul)', os.translateCommands('{COPY} a \"b\" ', \"windows\"))\n  222  \tend\n  223  \n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\base\\test_path.lua:\n  442  \n  443  \tfunction suite.translate_ReturnsTargetOSSeparator_Windows()\n  444: \t\t_OPTIONS[\"os\"] = \"windows\"\n  445  \t\ttest.isequal(\"dir\\\\dir\\\\file\", path.translate(\"dir/dir\\\\file\"))\n  446  \tend\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\config\\test_linkinfo.lua:\n   19  \t\twks, prj = test.createWorkspace()\n   20  \t\tkind \"StaticLib\"\n   21: \t\tsystem \"Windows\"\n   22  \tend\n   23  \n   ..\n   91  \n   92  \tfunction suite.nameFormatting_onWindows()\n   93: \t\tsystem \"Windows\"\n   94  \t\ti = prepare()\n   95  \t\ttest.isequal(\"MyProject.lib\", i.name)\n   ..\n  109  \n  110  \tfunction suite.impLibExtensionUnmodified_OnCustomTargetExt()\n  111: \t\tsystem \"windows\"\n  112  \t\tkind \"SharedLib\"\n  113  \t\ttargetextension \".mil\"\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\config\\test_links.lua:\n   17  \tfunction suite.setup()\n   18  \t\tpremake.action.set(\"test\")\n   19: \t\t_OS = \"windows\"\n   20  \t\twks, prj = test.createWorkspace()\n   21  \tend\n   ..\n   56  \n   57  \tfunction suite.skipsExtension_onExplicitExtension()\n   58: \t\tsystem \"windows\"\n   59  \t\tlinks { \"user32.lib\" }\n   60  \t\tlocal r = prepare(\"all\", \"fullpath\")\n   ..\n   68  \n   69  \tfunction suite.variableMaintained_onLeadingVariable()\n   70: \t\tsystem \"windows\"\n   71  \t\tlocation \"build\"\n   72  \t\tlinks { \"$(LOCAL_DEV_PATH)/sdk/lib/DEVMAPI\" }\n   ..\n   76  \n   77  \tfunction suite.variableMaintained_onQuotedVariable()\n   78: \t\tsystem \"windows\"\n   79  \t\tlocation \"build\"\n   80  \t\tlinks { '\"$(LOCAL_DEV_PATH)/sdk/lib/DEVMAPI.lib\"' }\n   ..\n  101  \n  102  \tfunction suite.skipsAssemblies_onManagedCpp()\n  103: \t\tsystem \"windows\"\n  104  \t\tclr \"On\"\n  105  \t\tlinks { \"user32\", \"System.dll\" }\n  ...\n  115  \n  116  \tfunction suite.skipsUnmanagedLibs_onManagedLinkage()\n  117: \t\tsystem \"windows\"\n  118  \t\tclr \"On\"\n  119  \t\tlinks { \"user32\", \"System.dll\" }\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\config\\test_targetinfo.lua:\n   99  \tfunction suite.nameUsesExe_onWindowsConsoleApp()\n  100  \t\tkind \"ConsoleApp\"\n  101: \t\tsystem \"Windows\"\n  102  \t\ti = prepare()\n  103  \t\ttest.isequal(\"MyProject.exe\", i.name)\n  ...\n  106  \tfunction suite.nameUsesExe_onWindowsWindowedApp()\n  107  \t\tkind \"WindowedApp\"\n  108: \t\tsystem \"Windows\"\n  109  \t\ti = prepare()\n  110  \t\ttest.isequal(\"MyProject.exe\", i.name)\n  ...\n  118  \tfunction suite.nameUsesDll_onWindowsSharedLib()\n  119  \t\tkind \"SharedLib\"\n  120: \t\tsystem \"Windows\"\n  121  \t\ti = prepare()\n  122  \t\ttest.isequal(\"MyProject.dll\", i.name)\n  ...\n  130  \tfunction suite.nameUsesLib_onWindowsStaticLib()\n  131  \t\tkind \"StaticLib\"\n  132: \t\tsystem \"Windows\"\n  133  \t\ti = prepare()\n  134  \t\ttest.isequal(\"MyProject.lib\", i.name)\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\project\\test_getconfig.lua:\n   49  \t\t_ACTION = \"vs2005\"\n   50  \t\tproject (\"MyProject\")\n   51: \t\tfilter { \"system:windows\" }\n   52  \t\tdefines { \"correct\" }\n   53  \t\tprepare()\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\tools\\test_dotnet.lua:\n   29  \n   30  \tfunction suite.defaultCompiler_onWindows()\n   31: \t\t_OS = \"windows\"\n   32  \t\tprepare()\n   33  \t\ttest.isequal(\"csc\", dotnet.gettoolname(cfg, \"csc\"))\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\tools\\test_gcc.lua:\n  279  \n  280  \tfunction suite.ldflags_onWindowsharedLib()\n  281: \t\tsystem \"Windows\"\n  282  \t\tkind \"SharedLib\"\n  283  \t\tprepare()\n  ...\n  286  \n  287  \tfunction suite.ldflags_onWindowsApp()\n  288: \t\tsystem \"Windows\"\n  289  \t\tkind \"WindowedApp\"\n  290  \t\tprepare()\n  291: \t\ttest.contains({ \"-mwindows\" }, gcc.getldflags(cfg))\n  292  \tend\n  293  \n  ...\n  352  \n  353  \tfunction suite.links_onSystemLibs_onWindows()\n  354: \t\tsystem \"windows\"\n  355  \t\tlinks { \"ole32\" }\n  356  \t\tprepare()\n\n139 matches across 50 files\n\n\nSearching 1400 files for \"target_\"\n\nC:\\dev\\game\\engine\\code\\_build\\premake5.lua:\n    2  BUILD_DIR = path.getabsolute(os.getcwd())\n    3  SRC_DIR = path.getabsolute(BUILD_DIR .. \"../src\")\n    4: TARGET_DIR = BUILD_DIR .. \"/_out/_bin/$(Configuration)/$(Platform)\"\n    5  \n    6  dofile \"./scripts/commoncs.lua\"\n\nC:\\dev\\game\\engine\\code\\_build\\_solutions\\platform.VC.VC.opendb:\n    ERROR: Unable to open file\n\nC:\\dev\\game\\engine\\code\\_build\\scripts\\common.lua:\n   46      location(generatedLocation)\n   47  \n   48:     local outDir = path.getabsolute(TARGET_DIR)\n   49      targetdir (outDir)\n   50  \n\nC:\\dev\\game\\engine\\code\\src\\runtime\\render\\_win\\renderswapchaind3d.cpp:\n   59  \t}\n   60  \n   61: \tm_desc.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;\n   62  \tm_desc.OutputWindow = pDevice->GetWindow()->GetHandle();\n   63  \n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\CMakeLists.txt:\n   62  # Include dirs\n   63  #-------------------------------------------------------------------------------------------\n   64: target_include_directories(EASTL PUBLIC include)\n   65  \n   66  #-------------------------------------------------------------------------------------------\n   67  # Libraries\n   68  #-------------------------------------------------------------------------------------------\n   69: target_link_libraries(EASTL EABase)\n   70  \n   71  #-------------------------------------------------------------------------------------------\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\benchmark\\CMakeLists.txt:\n   66      EASTL\n   67      EATest)\n   68: target_link_libraries(EASTLBenchmarks ${EASTLBenchmark_Libraries} Threads::Threads)\n   69  \n   70  #-------------------------------------------------------------------------------------------\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\include\\EABase\\config\\eacompiler.h:\n  538  \t#elif defined(_MSC_VER) && !defined(_CPPRTTI)\n  539  \t\t#define EA_COMPILER_NO_RTTI 1\n  540: \t#elif defined(__ARMCC_VERSION) && defined(__TARGET_CPU_MPCORE) && !defined(__RTTI)\n  541  \t\t#define EA_COMPILER_NO_RTTI 1\n  542  \t#endif\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\include\\EABase\\config\\eaplatform.h:\n  189  \n  190  \t// iPhone\n  191: \t// TARGET_OS_IPHONE will be undefined on an unknown compiler, and will be defined on gcc.\n  192: \t#if defined(EA_PLATFORM_IPHONE) || defined(__IPHONE__) || (defined(TARGET_OS_IPHONE) && TARGET_OS_IPHONE) || (defined(TARGET_IPHONE_SIMULATOR) && TARGET_IPHONE_SIMULATOR)\n  193  \t\t#undef  EA_PLATFORM_IPHONE\n  194  \t\t#define EA_PLATFORM_IPHONE 1\n  ...\n  221  \n  222  \t// Macintosh OSX\n  223: \t// TARGET_OS_MAC is defined by the Metrowerks and older AppleC compilers.\n  224: \t// Howerver, TARGET_OS_MAC is defined to be 1 in all cases.\n  225  \t// __i386__ and __intel__ are defined by the GCC compiler.\n  226  \t// __dest_os is defined by the Metrowerks compiler.\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\include\\EASTL\\internal\\function.h:\n  588  #ifndef FUNC_NO_RTTI\n  589  \t    typedef const std::type_info& (*call_type_id_t)();\n  590: \t    typedef void* (*call_target_t)(const total_storage_type& function_table, const std::type_info& type);\n  591  #endif\n  592  \n  ...\n  598  #ifndef FUNC_NO_RTTI\n  599  \t    call_type_id_t call_type_id;\n  600: \t    call_target_t call_target;\n  601  #endif\n  602  \n  ...\n  622  #ifndef FUNC_NO_RTTI\n  623  \t                                  call_type_id_t cti,\n  624: \t                                  call_target_t ct\n  625  #endif\n  626  \t                                  )\n  ...\n  858  \n  859  #ifndef FUNC_NO_RTTI\n  860: \t    const std::type_info & target_type() const EA_NOEXCEPT\n  861  \t\t{\n  862  \t\t\treturn storage.function_table->call_type_id();\n  ...\n 1064  \n 1065  #ifndef FUNC_NO_RTTI\n 1066: \t    const std::type_info & target_type() const EA_NOEXCEPT\n 1067  \t\t{\n 1068  \t\t\treturn storage.function_table->call_type_id();\n ....\n 1263  \n 1264  #ifndef FUNC_NO_RTTI\n 1265: \t    const std::type_info & target_type() const EA_NOEXCEPT\n 1266  \t\t{\n 1267  \t\t\treturn storage.function_table->call_type_id();\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\CMakeLists.txt:\n   54  set(EASTLTest_Libraries EASTL EATest)\n   55  if((NOT APPLE) AND (NOT WIN32))\n   56:     target_link_libraries(EASTLTest ${EASTLTest_Libraries} Threads::Threads rt)\n   57  else()\n   58:     target_link_libraries(EASTLTest ${EASTLTest_Libraries} Threads::Threads)\n   59  endif()\n   60  \n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\packages\\EAAssert\\CMakeLists.txt:\n   23  # exported include directories \n   24  #-------------------------------------------------------------------------------------------\n   25: target_include_directories(EAAssert INTERFACE include)\n   26  \n   27  # Workaround to have header files show up in IDEs\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\packages\\EABase\\CMakeLists.txt:\n   23  # exported include directories \n   24  #-------------------------------------------------------------------------------------------\n   25: target_include_directories(EABase INTERFACE include/Common)\n   26  \n   27  # HACK: Workaround CMake limitations to have files of interface / header-only\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\packages\\EABase\\include\\Common\\EABase\\config\\eacompiler.h:\n  538  \t#elif defined(_MSC_VER) && !defined(_CPPRTTI)\n  539  \t\t#define EA_COMPILER_NO_RTTI 1\n  540: \t#elif defined(__ARMCC_VERSION) && defined(__TARGET_CPU_MPCORE) && !defined(__RTTI)\n  541  \t\t#define EA_COMPILER_NO_RTTI 1\n  542  \t#endif\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\packages\\EABase\\include\\Common\\EABase\\config\\eaplatform.h:\n  189  \n  190  \t// iPhone\n  191: \t// TARGET_OS_IPHONE will be undefined on an unknown compiler, and will be defined on gcc.\n  192: \t#if defined(EA_PLATFORM_IPHONE) || defined(__IPHONE__) || (defined(TARGET_OS_IPHONE) && TARGET_OS_IPHONE) || (defined(TARGET_IPHONE_SIMULATOR) && TARGET_IPHONE_SIMULATOR)\n  193  \t\t#undef  EA_PLATFORM_IPHONE\n  194  \t\t#define EA_PLATFORM_IPHONE 1\n  ...\n  221  \n  222  \t// Macintosh OSX\n  223: \t// TARGET_OS_MAC is defined by the Metrowerks and older AppleC compilers.\n  224: \t// Howerver, TARGET_OS_MAC is defined to be 1 in all cases.\n  225  \t// __i386__ and __intel__ are defined by the GCC compiler.\n  226  \t// __dest_os is defined by the Metrowerks compiler.\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\packages\\EAMain\\CMakeLists.txt:\n   18  # exported include directories\n   19  #-------------------------------------------------------------------------------------------\n   20: target_include_directories(EAMain INTERFACE include)\n   21  \n   22  # Workaround to have header files show up in IDEs\n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\packages\\EAStdC\\CMakeLists.txt:\n   27  # Include directories\n   28  #-------------------------------------------------------------------------------------------\n   29: target_include_directories(EAStdC PUBLIC include)\n   30  \n   31  #-------------------------------------------------------------------------------------------\n   32  # Dependencies\n   33  #-------------------------------------------------------------------------------------------\n   34: target_link_libraries(EAStdC EABase)\n   35: target_link_libraries(EAStdC EAAssert)\n   36  \n   37  \n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\packages\\EATest\\CMakeLists.txt:\n   31  # Include directories\n   32  #-------------------------------------------------------------------------------------------\n   33: target_include_directories(EATest PUBLIC include)\n   34: target_link_libraries(EATest EABase)\n   35: target_link_libraries(EATest EAStdC)\n   36: target_link_libraries(EATest EASTL)\n   37: target_link_libraries(EATest EAMain)\n   38: target_link_libraries(EATest EAThread)\n   39  \n\nC:\\dev\\game\\engine\\code\\src\\system\\eastl\\test\\packages\\EAThread\\CMakeLists.txt:\n   18  # Include directories\n   19  #-------------------------------------------------------------------------------------------\n   20: target_include_directories(EAThread INTERFACE include)\n   21  \n   22  # Workaround to have header files show up in IDEs\n\nC:\\dev\\game\\engine\\tools\\premake\\Premake5.vcxproj:\n  279      <None Include=\"tests\\actions\\make\\cpp\\test_make_pch.lua\" />\n  280      <None Include=\"tests\\actions\\make\\cpp\\test_objects.lua\" />\n  281:     <None Include=\"tests\\actions\\make\\cpp\\test_target_rules.lua\" />\n  282      <None Include=\"tests\\actions\\make\\cpp\\test_tools.lua\" />\n  283      <None Include=\"tests\\actions\\make\\cpp\\test_wiidev.lua\" />\n  ...\n  361      <None Include=\"tests\\actions\\vstudio\\vc2010\\test_resource_compile.lua\" />\n  362      <None Include=\"tests\\actions\\vstudio\\vc2010\\test_rule_vars.lua\" />\n  363:     <None Include=\"tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\" />\n  364      <None Include=\"tests\\actions\\vstudio\\vc2010\\test_user_file.lua\" />\n  365      <None Include=\"tests\\actions\\vstudio\\vc2010\\test_vectorextensions.lua\" />\n\nC:\\dev\\game\\engine\\tools\\premake\\Premake5.vcxproj.filters:\n  635        <Filter>tests\\actions\\make\\cpp</Filter>\n  636      </None>\n  637:     <None Include=\"tests\\actions\\make\\cpp\\test_target_rules.lua\">\n  638        <Filter>tests\\actions\\make\\cpp</Filter>\n  639      </None>\n  ...\n  881        <Filter>tests\\actions\\vstudio\\vc2010</Filter>\n  882      </None>\n  883:     <None Include=\"tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\">\n  884        <Filter>tests\\actions\\vstudio\\vc2010</Filter>\n  885      </None>\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2005\\Premake5.vcproj:\n  990  \t\t\t\t\t\t</File>\n  991  \t\t\t\t\t\t<File\n  992: \t\t\t\t\t\t\tRelativePath=\"..\\..\\tests\\actions\\make\\cpp\\test_target_rules.lua\"\n  993  \t\t\t\t\t\t\t>\n  994  \t\t\t\t\t\t</File>\n  ...\n 1338  \t\t\t\t\t\t</File>\n 1339  \t\t\t\t\t\t<File\n 1340: \t\t\t\t\t\t\tRelativePath=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\"\n 1341  \t\t\t\t\t\t\t>\n 1342  \t\t\t\t\t\t</File>\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2008\\Premake5.vcproj:\n  988  \t\t\t\t\t\t</File>\n  989  \t\t\t\t\t\t<File\n  990: \t\t\t\t\t\t\tRelativePath=\"..\\..\\tests\\actions\\make\\cpp\\test_target_rules.lua\"\n  991  \t\t\t\t\t\t\t>\n  992  \t\t\t\t\t\t</File>\n  ...\n 1336  \t\t\t\t\t\t</File>\n 1337  \t\t\t\t\t\t<File\n 1338: \t\t\t\t\t\t\tRelativePath=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\"\n 1339  \t\t\t\t\t\t\t>\n 1340  \t\t\t\t\t\t</File>\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2010\\Premake5.vcxproj:\n  276      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_make_pch.lua\" />\n  277      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_objects.lua\" />\n  278:     <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_target_rules.lua\" />\n  279      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_tools.lua\" />\n  280      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_wiidev.lua\" />\n  ...\n  358      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_resource_compile.lua\" />\n  359      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_rule_vars.lua\" />\n  360:     <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\" />\n  361      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_user_file.lua\" />\n  362      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_vectorextensions.lua\" />\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2010\\Premake5.vcxproj.filters:\n  635        <Filter>tests\\actions\\make\\cpp</Filter>\n  636      </None>\n  637:     <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_target_rules.lua\">\n  638        <Filter>tests\\actions\\make\\cpp</Filter>\n  639      </None>\n  ...\n  881        <Filter>tests\\actions\\vstudio\\vc2010</Filter>\n  882      </None>\n  883:     <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\">\n  884        <Filter>tests\\actions\\vstudio\\vc2010</Filter>\n  885      </None>\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2012\\Premake5.vcxproj:\n  278      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_make_pch.lua\" />\n  279      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_objects.lua\" />\n  280:     <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_target_rules.lua\" />\n  281      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_tools.lua\" />\n  282      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_wiidev.lua\" />\n  ...\n  360      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_resource_compile.lua\" />\n  361      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_rule_vars.lua\" />\n  362:     <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\" />\n  363      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_user_file.lua\" />\n  364      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_vectorextensions.lua\" />\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2012\\Premake5.vcxproj.filters:\n  635        <Filter>tests\\actions\\make\\cpp</Filter>\n  636      </None>\n  637:     <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_target_rules.lua\">\n  638        <Filter>tests\\actions\\make\\cpp</Filter>\n  639      </None>\n  ...\n  881        <Filter>tests\\actions\\vstudio\\vc2010</Filter>\n  882      </None>\n  883:     <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\">\n  884        <Filter>tests\\actions\\vstudio\\vc2010</Filter>\n  885      </None>\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2013\\Premake5.vcxproj:\n  279      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_make_pch.lua\" />\n  280      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_objects.lua\" />\n  281:     <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_target_rules.lua\" />\n  282      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_tools.lua\" />\n  283      <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_wiidev.lua\" />\n  ...\n  361      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_resource_compile.lua\" />\n  362      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_rule_vars.lua\" />\n  363:     <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\" />\n  364      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_user_file.lua\" />\n  365      <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_vectorextensions.lua\" />\n\nC:\\dev\\game\\engine\\tools\\premake\\build\\vs2013\\Premake5.vcxproj.filters:\n  635        <Filter>tests\\actions\\make\\cpp</Filter>\n  636      </None>\n  637:     <None Include=\"..\\..\\tests\\actions\\make\\cpp\\test_target_rules.lua\">\n  638        <Filter>tests\\actions\\make\\cpp</Filter>\n  639      </None>\n  ...\n  881        <Filter>tests\\actions\\vstudio\\vc2010</Filter>\n  882      </None>\n  883:     <None Include=\"..\\..\\tests\\actions\\vstudio\\vc2010\\test_target_machine.lua\">\n  884        <Filter>tests\\actions\\vstudio\\vc2010</Filter>\n  885      </None>\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\curl_gssapi.c:\n   37      OM_uint32 *minor_status,\n   38      gss_ctx_id_t *context,\n   39:     gss_name_t target_name,\n   40      gss_OID mech_type,\n   41      gss_channel_bindings_t input_chan_bindings,\n   ..\n   65                                GSS_C_NO_CREDENTIAL, /* cred_handle */\n   66                                context,\n   67:                               target_name,\n   68                                mech_type,\n   69                                req_flags,\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\curl_gssapi.h:\n   48      OM_uint32 *minor_status,\n   49      gss_ctx_id_t *context,\n   50:     gss_name_t target_name,\n   51      gss_OID mech_type,\n   52      gss_channel_bindings_t input_chan_bindings,\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\curl_ntlm_core.c:\n  116  #define NTLM_HMAC_MD5_LEN     (16)\n  117  #define NTLMv2_BLOB_SIGNATURE \"\\x01\\x01\\x00\\x00\"\n  118: #define NTLMv2_BLOB_LEN       (44 -16 + ntlm->target_info_len + 4)\n  119  \n  120  /*\n  ...\n  699    Curl_write64_le(tw, ptr + 24);\n  700    memcpy(ptr + 32, challenge_client, 8);\n  701:   memcpy(ptr + 44, ntlm->target_info, ntlm->target_info_len);\n  702  \n  703    /* Concatenate the Type 2 challenge with the BLOB and do HMAC MD5 */\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\curl_ntlm_msgs.c:\n  102    if(flags & NTLMFLAG_NEGOTIATE_ALWAYS_SIGN)\n  103      fprintf(handle, \"NTLMFLAG_NEGOTIATE_ALWAYS_SIGN \");\n  104:   if(flags & NTLMFLAG_TARGET_TYPE_DOMAIN)\n  105:     fprintf(handle, \"NTLMFLAG_TARGET_TYPE_DOMAIN \");\n  106:   if(flags & NTLMFLAG_TARGET_TYPE_SERVER)\n  107:     fprintf(handle, \"NTLMFLAG_TARGET_TYPE_SERVER \");\n  108:   if(flags & NTLMFLAG_TARGET_TYPE_SHARE)\n  109:     fprintf(handle, \"NTLMFLAG_TARGET_TYPE_SHARE \");\n  110    if(flags & NTLMFLAG_NEGOTIATE_NTLM2_KEY)\n  111      fprintf(handle, \"NTLMFLAG_NEGOTIATE_NTLM2_KEY \");\n  ...\n  116    if(flags & NTLMFLAG_REQUEST_NONNT_SESSION_KEY)\n  117      fprintf(handle, \"NTLMFLAG_REQUEST_NONNT_SESSION_KEY \");\n  118:   if(flags & NTLMFLAG_NEGOTIATE_TARGET_INFO)\n  119:     fprintf(handle, \"NTLMFLAG_NEGOTIATE_TARGET_INFO \");\n  120    if(flags & (1<<24))\n  121      fprintf(handle, \"NTLMFLAG_UNKNOWN_24 \");\n  ...\n  168                                           struct ntlmdata *ntlm)\n  169  {\n  170:   unsigned short target_info_len = 0;\n  171:   unsigned int target_info_offset = 0;\n  172  \n  173    if(size >= 48) {\n  174:     target_info_len = Curl_read16_le(&buffer[40]);\n  175:     target_info_offset = Curl_read32_le(&buffer[44]);\n  176:     if(target_info_len > 0) {\n  177:       if(((target_info_offset + target_info_len) > size) ||\n  178:          (target_info_offset < 48)) {\n  179          infof(data, \"NTLM handshake failure (bad type-2 message). \"\n  180                      \"Target Info Offset Len is set incorrect by the peer\\n\");\n  ...\n  182        }\n  183  \n  184:       ntlm->target_info = malloc(target_info_len);\n  185:       if(!ntlm->target_info)\n  186          return CURLE_OUT_OF_MEMORY;\n  187  \n  188:       memcpy(ntlm->target_info, &buffer[target_info_offset], target_info_len);\n  189      }\n  190    }\n  191  \n  192:   ntlm->target_info_len = target_info_len;\n  193  \n  194    return CURLE_OK;\n  ...\n  289    memcpy(ntlm->nonce, &type2[24], 8);\n  290  \n  291:   if(ntlm->flags & NTLMFLAG_NEGOTIATE_TARGET_INFO) {\n  292      result = ntlm_decode_type2_target(data, type2, type2_len, ntlm);\n  293      if(result) {\n  ...\n  534  \n  535  #if USE_NTRESPONSES && USE_NTLM_V2\n  536:   if(ntlm->target_info_len) {\n  537      unsigned char ntbuffer[0x18];\n  538      unsigned int entropy[2];\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\curl_ntlm_msgs.h:\n   91     should be signed with a \"dummy\" signature. */\n   92  \n   93: #define NTLMFLAG_TARGET_TYPE_DOMAIN              (1<<16)\n   94  /* Sent by the server in the Type 2 message to indicate that the target\n   95     authentication realm is a domain. */\n   96  \n   97: #define NTLMFLAG_TARGET_TYPE_SERVER              (1<<17)\n   98  /* Sent by the server in the Type 2 message to indicate that the target\n   99     authentication realm is a server. */\n  100  \n  101: #define NTLMFLAG_TARGET_TYPE_SHARE               (1<<18)\n  102  /* Sent by the server in the Type 2 message to indicate that the target\n  103     authentication realm is a share. Presumably, this is for share-level\n  ...\n  117  /* unknown purpose */\n  118  \n  119: #define NTLMFLAG_NEGOTIATE_TARGET_INFO           (1<<23)\n  120  /* Sent by the server in the Type 2 message to indicate that it is including a\n  121     Target Information block in the message. */\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\curl_sasl.c:\n 1146  {\n 1147    /* Free the target info */\n 1148:   Curl_safefree(ntlm->target_info);\n 1149  \n 1150    /* Reset any variables */\n 1151:   ntlm->target_info_len = 0;\n 1152  }\n 1153  #endif /* USE_NTLM && !USE_WINDOWS_SSPI*/\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\curl_sspi.h:\n   98  # define SEC_E_UNSUPPORTED_FUNCTION           ((HRESULT)0x80090302L)\n   99  #endif\n  100: #ifndef SEC_E_TARGET_UNKNOWN\n  101: # define SEC_E_TARGET_UNKNOWN                 ((HRESULT)0x80090303L)\n  102  #endif\n  103  #ifndef SEC_E_INTERNAL_ERROR\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\setup-os400.h:\n  164                                               gss_cred_id_t cred_handle,\n  165                                               gss_ctx_id_t * context_handle,\n  166:                                              gss_name_t target_name,\n  167                                               gss_OID mech_type,\n  168                                               gss_flags_t req_flags,\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\strerror.c:\n 1012        txt = \"SEC_E_STRONG_CRYPTO_NOT_SUPPORTED\";\n 1013        break;\n 1014:     case SEC_E_TARGET_UNKNOWN:\n 1015:       txt = \"SEC_E_TARGET_UNKNOWN\";\n 1016        break;\n 1017      case SEC_E_TIME_SKEW:\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\urldata.h:\n  444    unsigned int flags;\n  445    unsigned char nonce[8];\n  446:   void* target_info; /* TargetInfo received in the ntlm type-2 message */\n  447:   unsigned int target_info_len;\n  448  #endif\n  449  };\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\curl\\lib\\vtls\\darwinssl.c:\n   50     IMPORTANT: If TLS 1.1 and 1.2 support are important for you on OS X, then\n   51     you must build this project against the 10.8 SDK or later. */\n   52: #if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))\n   53  \n   54  #if MAC_OS_X_VERSION_MAX_ALLOWED < 1050\n   ..\n   75  #define CURL_SUPPORT_MAC_10_9 MAC_OS_X_VERSION_MIN_REQUIRED <= 1090\n   76  \n   77: #elif TARGET_OS_EMBEDDED || TARGET_OS_IPHONE\n   78  #define CURL_BUILD_IOS 1\n   79  #define CURL_BUILD_IOS_7 __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000\n   ..\n   91  #else\n   92  #error \"The darwinssl back-end requires iOS or OS X.\"\n   93: #endif /* (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE)) */\n   94  \n   95  #if CURL_BUILD_MAC\n\nC:\\dev\\game\\engine\\tools\\premake\\contrib\\zlib\\zutil.h:\n  119  #endif\n  120  \n  121: #if defined(MACOS) || defined(TARGET_OS_MAC)\n  122  #  define OS_CODE  0x07\n  123  #  ifndef Z_SOLO\n\nC:\\dev\\game\\engine\\tools\\premake\\modules\\d\\tests\\test_dmd.lua:\n   49  \tend\n   50  \n   51: \tfunction suite.dmd_target_separateCompilation()\n   52  \t\tflags { \"SeparateCompilation\" }\n   53  \t\tprepare_cfg({ m.make.target })\n\nC:\\dev\\game\\engine\\tools\\premake\\modules\\d\\tests\\test_gdc.lua:\n   49  \tend\n   50  \n   51: \tfunction suite.dmd_target_separateCompilation()\n   52  \t\tflags { \"SeparateCompilation\" }\n   53  \t\tprepare_cfg({ m.make.target })\n\nC:\\dev\\game\\engine\\tools\\premake\\modules\\d\\tests\\test_ldc.lua:\n   49  \tend\n   50  \n   51: \tfunction suite.dmd_target_separateCompilation()\n   52  \t\tflags { \"SeparateCompilation\" }\n   53  \t\tprepare_cfg({ m.make.target })\n\nC:\\dev\\game\\engine\\tools\\premake\\modules\\xcode\\tests\\test_xcode_dependencies.lua:\n  217  ---------------------------------------------------------------------------\n  218  \n  219: \tfunction suite.PBXNativeTarget_ListsDependencies()\n  220  \t\tprepare()\n  221  \t\txcode.PBXNativeTarget(tr)\n\nC:\\dev\\game\\engine\\tools\\premake\\modules\\xcode\\tests\\test_xcode_project.lua:\n  528  ---------------------------------------------------------------------------\n  529  \n  530: \tfunction suite.PBXNativeTarget_OnConsoleApp()\n  531  \t\tprepare()\n  532  \t\txcode.PBXNativeTarget(tr)\n  ...\n  556  \n  557  \n  558: \tfunction suite.PBXNativeTarget_OnWindowedApp()\n  559  \t\tkind \"WindowedApp\"\n  560  \t\tprepare()\n  ...\n  585  \n  586  \n  587: \tfunction suite.PBXNativeTarget_OnSharedLib()\n  588  \t\tkind \"SharedLib\"\n  589  \t\tprepare()\n  ...\n  613  \n  614  \n  615: \tfunction suite.PBXNativeTarget_OnBuildCommands()\n  616  \t\tprebuildcommands { \"prebuildcmd\" }\n  617  \t\tprelinkcommands { \"prelinkcmd\" }\n  ...\n  856  ---------------------------------------------------------------------------\n  857  \n  858: \tfunction suite.XCBuildConfigurationTarget_OnConsoleApp()\n  859  \t\tprepare()\n  860  \t\txcode.XCBuildConfiguration_Target(tr, tr.products.children[1], tr.configs[1])\n  ...\n  876  \n  877  \n  878: \tfunction suite.XCBuildConfigurationTarget_OnWindowedApp()\n  879  \t\tkind \"WindowedApp\"\n  880  \t\tprepare()\n  ...\n  897  \n  898  \n  899: \tfunction suite.XCBuildConfigurationTarget_OnStaticLib()\n  900  \t\tkind \"StaticLib\"\n  901  \t\tprepare()\n  ...\n  918  \n  919  \n  920: \tfunction suite.XCBuildConfigurationTarget_OnSharedLib()\n  921  \t\tkind \"SharedLib\"\n  922  \t\tprepare()\n  ...\n  940  \n  941  \n  942: \tfunction suite.XCBuildConfigurationTarget_OnTargetPrefix()\n  943  \t\tkind \"SharedLib\"\n  944  \t\ttargetprefix \"xyz\"\n  ...\n  963  \n  964  \n  965: \tfunction suite.XCBuildConfigurationTarget_OnTargetExtension()\n  966  \t\tkind \"SharedLib\"\n  967  \t\ttargetextension \".xyz\"\n  ...\n  990  \n  991  \n  992: \tfunction suite.XCBuildConfigurationTarget_OnInfoPlist()\n  993  \t\tfiles { \"../../MyProject-Info.plist\" }\n  994  \t\tprepare()\n  ...\n 1012  \n 1013  \n 1014: \tfunction suite.XCBuildConfigurationTarget_OnSymbols()\n 1015  \t\tsymbols \"On\"\n 1016  \t\tprepare()\n ....\n 1032  \n 1033  \n 1034: \tfunction suite.XCBuildConfigurationTarget_OnTargetSuffix()\n 1035  \t\ttargetsuffix \"-d\"\n 1036  \t\tprepare()\n ....\n 1053  \n 1054  \n 1055: \tfunction suite.XCBuildConfigurationTarget_OnSinglePlatform()\n 1056  \t\tplatforms { \"Universal32\" }\n 1057  \t\tprepare()\n ....\n 1074  \n 1075  \n 1076: \tfunction suite.XCBuildConfigurationTarget_OnMultiplePlatforms()\n 1077  \t\tworkspace(\"MyWorkspace\")\n 1078  \t\tplatforms { \"Universal32\", \"Universal64\" }\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\_tests.lua:\n  134  \t\"actions/vstudio/vc2010/test_resource_compile.lua\",\n  135  \t\"actions/vstudio/vc2010/test_rule_vars.lua\",\n  136: \t\"actions/vstudio/vc2010/test_target_machine.lua\",\n  137  \t\"actions/vstudio/vc2010/test_user_file.lua\",\n  138  \t\"actions/vstudio/vc2010/test_vectorextensions.lua\",\n  ...\n  158  \t\"actions/make/cpp/test_make_linking.lua\",\n  159  \t\"actions/make/cpp/test_objects.lua\",\n  160: \t\"actions/make/cpp/test_target_rules.lua\",\n  161  \t\"actions/make/cpp/test_tools.lua\",\n  162  \t\"actions/make/cpp/test_wiidev.lua\",\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\actions\\make\\cpp\\test_target_rules.lua:\n    1  --\n    2: -- tests/actions/make/cpp/test_target_rules.lua\n    3  -- Validate the makefile target building rules.\n    4  -- Copyright (c) 2009-2013 Jason Perkins and the Premake project\n    5  --\n    6  \n    7: \tlocal suite = test.declare(\"make_cpp_target_rules\")\n    8  \tlocal make = premake.make\n    9  \tlocal project = premake.project\n\nC:\\dev\\game\\engine\\tools\\premake\\tests\\actions\\vstudio\\vc2010\\test_target_machine.lua:\n    1  ---\n    2: -- tests/actions/vstudio/vc2010/test_target_machine.lua\n    3  -- Validate generation of the <TargetMachine> element\n    4  -- Copyright (c) 2015 Jason Perkins and the Premake project\n    5  ---\n    6  \n    7: \tlocal suite = test.declare(\"vstudio_vs2010_target_machine\")\n    8  \tlocal vc2010 = premake.vstudio.vc2010\n    9  \n\n142 matches across 47 files\n",
+			"settings":
+			{
+				"buffer_size": 55517,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "code/_build/scripts/common.lua",
+			"settings":
+			{
+				"buffer_size": 1766,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -189,13 +207,17 @@
 	[
 		"/C/dev/game/engine/code",
 		"/C/dev/game/engine/code/_build",
+		"/C/dev/game/engine/code/_build/scripts",
 		"/C/dev/game/engine/code/src",
+		"/C/dev/game/engine/code/src/game",
+		"/C/dev/game/engine/code/src/game/app",
 		"/C/dev/game/engine/code/src/system",
 		"/C/dev/game/engine/code/src/system/base",
 		"/C/dev/game/engine/tools/premake"
 	],
 	"file_history":
 	[
+		"/C/dev/game/engine/code/src/runtime/app/premake.lua",
 		"/C/dev/game/engine/code/src/runtime/render/premake.lua",
 		"/C/dev/game/engine/code/src/game/app/premake.lua",
 		"/C/dev/game/engine/tools/premake/modules/codelite/_preload.lua",
@@ -207,7 +229,6 @@
 		"/C/dev/game/engine/code/src/system/base/premake.lua",
 		"/C/dev/game/engine/code/_build/premake5.lua",
 		"/C/dev/mathfu/mathfu-master/readme.md",
-		"/C/dev/game/engine/code/src/runtime/app/premake.lua",
 		"/C/dev/directx/DirectX-Graphics-Samples-master/README.md",
 		"/C/dev/directx/Tuxis-Engine-master/Tuxis-Engine-master/README.rdoc",
 		"/C/dev/game/engine/tools/premake/src/actions/vstudio/vs2010_vcxproj.lua",
@@ -342,6 +363,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"target_",
+			"WINDOWS\"",
 			"SHAREDLIB",
 			"get;omls",
 			"getlinks(",
@@ -507,7 +530,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -538,7 +561,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -547,15 +570,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2613,
+						"buffer_size": 2729,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1417,
-								1424
+								1939,
+								1941
 							]
 						],
 						"settings":
@@ -565,18 +588,48 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1344.0,
+						"translation.y": 1740.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "code/_build/scripts/configure.lua",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 624,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24631,
+						"buffer_size": 45116,
 						"regions":
 						{
 						},
@@ -596,11 +649,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "code/src/runtime/render/premake.lua",
 					"semi_transient": false,
 					"settings":
@@ -624,35 +677,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "code/src/runtime/app/premake.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 67,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								64,
-								64
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -661,15 +686,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 174,
+						"buffer_size": 264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								99,
-								99
+								213,
+								213
 							]
 						],
 						"settings":
@@ -680,7 +705,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -708,7 +733,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -717,15 +742,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 718,
+						"buffer_size": 682,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								612,
-								612
+								652,
+								652
 							]
 						],
 						"settings":
@@ -736,7 +761,1203 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 55517,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										241,
+										249
+									],
+									[
+										332,
+										340
+									],
+									[
+										552,
+										560
+									],
+									[
+										915,
+										923
+									],
+									[
+										1262,
+										1270
+									],
+									[
+										1523,
+										1531
+									],
+									[
+										1758,
+										1766
+									],
+									[
+										1947,
+										1955
+									],
+									[
+										2360,
+										2368
+									],
+									[
+										2678,
+										2686
+									],
+									[
+										3051,
+										3059
+									],
+									[
+										3362,
+										3370
+									],
+									[
+										3765,
+										3773
+									],
+									[
+										4083,
+										4091
+									],
+									[
+										4365,
+										4373
+									],
+									[
+										4676,
+										4684
+									],
+									[
+										5066,
+										5074
+									],
+									[
+										5384,
+										5392
+									],
+									[
+										5757,
+										5765
+									],
+									[
+										6068,
+										6076
+									],
+									[
+										6471,
+										6479
+									],
+									[
+										6789,
+										6797
+									],
+									[
+										7071,
+										7079
+									],
+									[
+										7382,
+										7390
+									],
+									[
+										7524,
+										7532
+									],
+									[
+										7742,
+										7750
+									],
+									[
+										7942,
+										7950
+									],
+									[
+										7972,
+										7980
+									],
+									[
+										8124,
+										8132
+									],
+									[
+										8154,
+										8162
+									],
+									[
+										8200,
+										8208
+									],
+									[
+										8408,
+										8416
+									],
+									[
+										8735,
+										8743
+									],
+									[
+										9108,
+										9116
+									],
+									[
+										9368,
+										9376
+									],
+									[
+										9556,
+										9564
+									],
+									[
+										9742,
+										9750
+									],
+									[
+										9923,
+										9931
+									],
+									[
+										10108,
+										10116
+									],
+									[
+										10251,
+										10259
+									],
+									[
+										10273,
+										10281
+									],
+									[
+										10399,
+										10407
+									],
+									[
+										10561,
+										10569
+									],
+									[
+										10834,
+										10842
+									],
+									[
+										11059,
+										11067
+									],
+									[
+										11284,
+										11292
+									],
+									[
+										11565,
+										11573
+									],
+									[
+										11800,
+										11808
+									],
+									[
+										12025,
+										12033
+									],
+									[
+										12250,
+										12258
+									],
+									[
+										12487,
+										12495
+									],
+									[
+										12711,
+										12719
+									],
+									[
+										12887,
+										12895
+									],
+									[
+										13106,
+										13114
+									],
+									[
+										13265,
+										13273
+									],
+									[
+										13454,
+										13462
+									],
+									[
+										13690,
+										13698
+									],
+									[
+										13950,
+										13958
+									],
+									[
+										14193,
+										14201
+									],
+									[
+										14453,
+										14461
+									],
+									[
+										14642,
+										14650
+									],
+									[
+										14894,
+										14902
+									],
+									[
+										15126,
+										15134
+									],
+									[
+										15372,
+										15380
+									],
+									[
+										15610,
+										15618
+									],
+									[
+										15876,
+										15884
+									],
+									[
+										15988,
+										15996
+									],
+									[
+										16153,
+										16161
+									],
+									[
+										16403,
+										16411
+									],
+									[
+										16518,
+										16526
+									],
+									[
+										16699,
+										16707
+									],
+									[
+										16888,
+										16896
+									],
+									[
+										17003,
+										17011
+									],
+									[
+										17274,
+										17282
+									],
+									[
+										17502,
+										17510
+									],
+									[
+										17619,
+										17627
+									],
+									[
+										17857,
+										17865
+									],
+									[
+										18165,
+										18173
+									],
+									[
+										18307,
+										18315
+									],
+									[
+										18417,
+										18425
+									],
+									[
+										18581,
+										18589
+									],
+									[
+										18647,
+										18655
+									],
+									[
+										18798,
+										18806
+									],
+									[
+										18864,
+										18872
+									],
+									[
+										19014,
+										19022
+									],
+									[
+										19228,
+										19236
+									],
+									[
+										19496,
+										19504
+									],
+									[
+										19742,
+										19750
+									],
+									[
+										19979,
+										19987
+									],
+									[
+										20215,
+										20223
+									],
+									[
+										20384,
+										20392
+									],
+									[
+										20449,
+										20457
+									],
+									[
+										20608,
+										20616
+									],
+									[
+										20674,
+										20682
+									],
+									[
+										20864,
+										20872
+									],
+									[
+										20929,
+										20937
+									],
+									[
+										21103,
+										21111
+									],
+									[
+										21169,
+										21177
+									],
+									[
+										21322,
+										21330
+									],
+									[
+										21388,
+										21396
+									],
+									[
+										21515,
+										21523
+									],
+									[
+										21779,
+										21787
+									],
+									[
+										21992,
+										22000
+									],
+									[
+										22151,
+										22159
+									],
+									[
+										22223,
+										22231
+									],
+									[
+										22378,
+										22386
+									],
+									[
+										22451,
+										22459
+									],
+									[
+										22675,
+										22683
+									],
+									[
+										22857,
+										22865
+									],
+									[
+										23155,
+										23163
+									],
+									[
+										23389,
+										23397
+									],
+									[
+										23618,
+										23626
+									],
+									[
+										23861,
+										23869
+									],
+									[
+										24110,
+										24118
+									],
+									[
+										24373,
+										24381
+									],
+									[
+										24621,
+										24629
+									],
+									[
+										24883,
+										24891
+									],
+									[
+										25121,
+										25129
+									],
+									[
+										25373,
+										25381
+									],
+									[
+										25567,
+										25575
+									],
+									[
+										25813,
+										25821
+									],
+									[
+										25923,
+										25931
+									],
+									[
+										26102,
+										26110
+									],
+									[
+										26315,
+										26323
+									],
+									[
+										26470,
+										26478
+									],
+									[
+										26650,
+										26658
+									],
+									[
+										26832,
+										26840
+									],
+									[
+										27013,
+										27021
+									],
+									[
+										27174,
+										27182
+									],
+									[
+										27412,
+										27420
+									],
+									[
+										27600,
+										27608
+									],
+									[
+										27784,
+										27792
+									],
+									[
+										27968,
+										27976
+									],
+									[
+										28200,
+										28208
+									],
+									[
+										28399,
+										28407
+									],
+									[
+										28624,
+										28632
+									],
+									[
+										28755,
+										28763
+									],
+									[
+										28839,
+										28847
+									],
+									[
+										28977,
+										28985
+									],
+									[
+										29257,
+										29264
+									],
+									[
+										29611,
+										29618
+									],
+									[
+										29799,
+										29806
+									],
+									[
+										30074,
+										30081
+									],
+									[
+										30357,
+										30364
+									],
+									[
+										30612,
+										30619
+									],
+									[
+										31027,
+										31034
+									],
+									[
+										31235,
+										31242
+									],
+									[
+										31397,
+										31404
+									],
+									[
+										31418,
+										31425
+									],
+									[
+										31448,
+										31455
+									],
+									[
+										31476,
+										31483
+									],
+									[
+										31625,
+										31632
+									],
+									[
+										31717,
+										31724
+									],
+									[
+										32092,
+										32099
+									],
+									[
+										32287,
+										32294
+									],
+									[
+										32474,
+										32481
+									],
+									[
+										32621,
+										32628
+									],
+									[
+										32798,
+										32805
+									],
+									[
+										32975,
+										32982
+									],
+									[
+										33233,
+										33240
+									],
+									[
+										33334,
+										33341
+									],
+									[
+										33657,
+										33664
+									],
+									[
+										34002,
+										34009
+									],
+									[
+										34406,
+										34413
+									],
+									[
+										34642,
+										34649
+									],
+									[
+										34804,
+										34811
+									],
+									[
+										34825,
+										34832
+									],
+									[
+										34855,
+										34862
+									],
+									[
+										34883,
+										34890
+									],
+									[
+										35032,
+										35039
+									],
+									[
+										35124,
+										35131
+									],
+									[
+										35522,
+										35529
+									],
+									[
+										35855,
+										35862
+									],
+									[
+										36142,
+										36149
+									],
+									[
+										36186,
+										36193
+									],
+									[
+										36456,
+										36463
+									],
+									[
+										36513,
+										36520
+									],
+									[
+										36557,
+										36564
+									],
+									[
+										36601,
+										36608
+									],
+									[
+										36644,
+										36651
+									],
+									[
+										36688,
+										36695
+									],
+									[
+										36952,
+										36959
+									],
+									[
+										37319,
+										37326
+									],
+									[
+										37706,
+										37713
+									],
+									[
+										38078,
+										38085
+									],
+									[
+										38313,
+										38320
+									],
+									[
+										38578,
+										38585
+									],
+									[
+										38747,
+										38754
+									],
+									[
+										38970,
+										38977
+									],
+									[
+										39139,
+										39146
+									],
+									[
+										39474,
+										39481
+									],
+									[
+										39891,
+										39898
+									],
+									[
+										40294,
+										40301
+									],
+									[
+										40535,
+										40542
+									],
+									[
+										40912,
+										40919
+									],
+									[
+										41329,
+										41336
+									],
+									[
+										41732,
+										41739
+									],
+									[
+										41973,
+										41980
+									],
+									[
+										42350,
+										42357
+									],
+									[
+										42767,
+										42774
+									],
+									[
+										43170,
+										43177
+									],
+									[
+										43411,
+										43418
+									],
+									[
+										43668,
+										43675
+									],
+									[
+										43931,
+										43938
+									],
+									[
+										44198,
+										44205
+									],
+									[
+										44516,
+										44523
+									],
+									[
+										44681,
+										44688
+									],
+									[
+										44700,
+										44707
+									],
+									[
+										45017,
+										45024
+									],
+									[
+										45074,
+										45081
+									],
+									[
+										45126,
+										45133
+									],
+									[
+										45183,
+										45190
+									],
+									[
+										45235,
+										45242
+									],
+									[
+										45291,
+										45298
+									],
+									[
+										45592,
+										45599
+									],
+									[
+										45652,
+										45659
+									],
+									[
+										45859,
+										45866
+									],
+									[
+										45902,
+										45909
+									],
+									[
+										45971,
+										45978
+									],
+									[
+										46029,
+										46036
+									],
+									[
+										46093,
+										46100
+									],
+									[
+										46134,
+										46141
+									],
+									[
+										46155,
+										46162
+									],
+									[
+										46200,
+										46207
+									],
+									[
+										46436,
+										46443
+									],
+									[
+										46457,
+										46464
+									],
+									[
+										46498,
+										46505
+									],
+									[
+										46588,
+										46595
+									],
+									[
+										46609,
+										46616
+									],
+									[
+										46630,
+										46637
+									],
+									[
+										46695,
+										46702
+									],
+									[
+										46713,
+										46720
+									],
+									[
+										46868,
+										46875
+									],
+									[
+										47057,
+										47064
+									],
+									[
+										47310,
+										47317
+									],
+									[
+										47508,
+										47515
+									],
+									[
+										47706,
+										47713
+									],
+									[
+										47981,
+										47988
+									],
+									[
+										48289,
+										48296
+									],
+									[
+										48361,
+										48368
+									],
+									[
+										48615,
+										48622
+									],
+									[
+										48652,
+										48659
+									],
+									[
+										49047,
+										49054
+									],
+									[
+										49367,
+										49374
+									],
+									[
+										49409,
+										49416
+									],
+									[
+										49618,
+										49625
+									],
+									[
+										49706,
+										49713
+									],
+									[
+										49984,
+										49991
+									],
+									[
+										50003,
+										50010
+									],
+									[
+										50025,
+										50032
+									],
+									[
+										50201,
+										50208
+									],
+									[
+										50223,
+										50230
+									],
+									[
+										50443,
+										50450
+									],
+									[
+										50462,
+										50469
+									],
+									[
+										50484,
+										50491
+									],
+									[
+										50655,
+										50662
+									],
+									[
+										50836,
+										50843
+									],
+									[
+										51057,
+										51064
+									],
+									[
+										51278,
+										51285
+									],
+									[
+										51594,
+										51601
+									],
+									[
+										51876,
+										51883
+									],
+									[
+										52006,
+										52013
+									],
+									[
+										52130,
+										52137
+									],
+									[
+										52250,
+										52257
+									],
+									[
+										52501,
+										52508
+									],
+									[
+										52694,
+										52701
+									],
+									[
+										52829,
+										52836
+									],
+									[
+										52960,
+										52967
+									],
+									[
+										53091,
+										53098
+									],
+									[
+										53234,
+										53241
+									],
+									[
+										53384,
+										53391
+									],
+									[
+										53537,
+										53544
+									],
+									[
+										53662,
+										53669
+									],
+									[
+										53797,
+										53804
+									],
+									[
+										53944,
+										53951
+									],
+									[
+										54261,
+										54268
+									],
+									[
+										54527,
+										54534
+									],
+									[
+										54761,
+										54768
+									],
+									[
+										54968,
+										54975
+									],
+									[
+										55200,
+										55207
+									],
+									[
+										55417,
+										55424
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								29515,
+								29515
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 19080.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "code/_build/scripts/common.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1675,
+								1675
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 708.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

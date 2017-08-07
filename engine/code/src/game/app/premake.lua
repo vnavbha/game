@@ -9,6 +9,7 @@ links{
 	"dxgi.lib",
 	"d3d11.lib"
 }
+postbuildcommands { "copy /y \"engine.ini\" \""..TARGET_DIR .. "\"" }
 --vpaths { ["Headers/*"] = "**.h" } - works
 
 

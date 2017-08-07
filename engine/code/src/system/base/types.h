@@ -12,6 +12,10 @@
 #include "eastl/vector.h"
 #include "eastl/algorithm.h"
 #include "eastl/shared_ptr.h"
+#include "EABase/config/eacompilertraits.h"
+EA_DISABLE_VC_WARNING(4996)
+#include "EAStdC/EAString.h"
+EA_RESTORE_VC_WARNING()
 #include "math/vector.h"
 #include "math/matrix.h"
 #include "math/quaternion.h"
@@ -108,3 +112,7 @@ using THashSet = eastl::hash_set<Value, Hash, Predicate, Allocator>;
 #define ZFnFind eastl::find
 #define ZFnFindIf eastl::find_if
 #define ZFnMakePair eastl::make_pair
+#define ZFnToInt EA::StdC::AtoI32
+#define ZFnToUInt EA::StdC::AtoU32
+#define ZFnICmp EA::StdC::Stricmp
+#define ZFnCmp EA::StdC::StrCmp

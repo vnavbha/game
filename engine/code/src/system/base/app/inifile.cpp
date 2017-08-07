@@ -30,11 +30,18 @@ void ZIniFile::Init(const ZFilePath& path)
 	ZString sLine;
 	while (stream.ReadLine(sLine))
 	{
+		if (sLine.empty())
+		{
+			continue;
+		}
 		ZString sLeft, sRight;
 		if (split_first(sLine, sLeft, sRight, ZString("=")) == false)
 		{
-			ZTRACE_MESSAGE("inifile", "Invalid option", sLine);
+			ZTRACE_MESSAGE("inifile", "Invalid option", sLine.c_str());
+			continue;
 		}
+
+		ZTRACE_MESSAGE("inifile", "Added options key:%s, val:%s", sLeft.c_str(), sRight.c_str());
 		
 		m_aValues.insert(TPair<ZString, ZString>(sLeft, sRight));
 	}

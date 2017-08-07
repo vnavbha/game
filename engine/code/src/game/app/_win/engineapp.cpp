@@ -22,13 +22,13 @@ ZEngineApp::~ZEngineApp()
 
 void ZEngineApp::Init()
 {
-	ZEngineAppCommon::Init();
 	InitWorkspace();
+	ZEngineAppCommon::Init();	
 }
 
 void ZEngineApp::Uninit()
 {
-
+	ZEngineAppCommon::Uninit();
 }
 
 void ZEngineApp::InitWorkspace()
@@ -37,5 +37,4 @@ void ZEngineApp::InitWorkspace()
 	GetModuleFileName(NULL, pStr, MAX_PATH);
 	
 	m_exePath = ZFilePath(ZString().assign_convert(pStr));
-	OnExecutablePathInitialized();
 }

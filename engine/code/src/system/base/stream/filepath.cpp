@@ -17,14 +17,17 @@ ZFilePath::ZFilePath()
 ZFilePath::ZFilePath(const ZString& sPath)
 	: m_bIsValid(false)
 {
-	ZString sPathNormalized = sPath;
+	char fullPath[MAX_PATH];
+	_fullpath(fullPath, sPath.c_str(), MAX_PATH);
+
+	ZString sPathNormalized = fullPath;
 	replace_all(sPathNormalized, ZString("\\"), PathSeparator());
 	ZString sDummy;
 	if (!split_first(sPathNormalized, m_sDrive, sDummy, ZString(":")))
 	{
-		return;
+		m_sDrive = "";
 	}
-
+	
 	ZString sPathSeparator = ZString() + PathSeparator();
 	if (!split_last(sPathNormalized, sDummy, m_sExtension, ZString(".")))
 	{
@@ -46,9 +49,16 @@ ZFilePath::~ZFilePath()
 
 ZFilePath& ZFilePath::operator+=(const ZString& sPath)
 {
-	*this = ZFilePath(ToFullPath() + PathSeparator() + sPath);
+	*this = *this + sPath;
 	return *this;
 }
+
+
+ZFilePath ZFilePath::operator+(const ZString& sPath)
+{
+	return ZFilePath(ToFullPath() + PathSeparator() + sPath);
+}
+
 
 bool ZFilePath::IsValid() const
 {

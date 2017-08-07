@@ -1,5 +1,6 @@
 #pragma once
 #include "system/base/subsystem/subsystem.h"
+#include "system/base/stream/filepath.h"
 #include "system/base/types.h"
 
 class ZRenderDevice;
@@ -15,7 +16,7 @@ public:
 	bool Init() override;
 	void Uninit() override;
 	void Update(const SGameTime& gameTime) override;
-
+	
 protected:
-	ZString m_sRuntimePath;
+	ZFilePath m_resourcePath;
 };

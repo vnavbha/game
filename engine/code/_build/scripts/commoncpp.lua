@@ -84,7 +84,8 @@ function cpp_lib(moduleName, projectName)
     files({
         "**.cpp",
         "**.hpp",
-        "**.h"
+        "**.h",
+        "**.ini"
     })
     cpp_common_includes()
     kind("StaticLib")
@@ -96,7 +97,8 @@ function cpp_dyn_lib(moduleName, projectName)
     files({
         "**.cpp",
         "**.hpp",
-        "**.h"
+        "**.h",
+        "**.ini"
     })
     cpp_common_includes()
     kind("SharedLib")
@@ -112,7 +114,8 @@ function cpp_app(moduleName, projectName)
     files({
         "**.cpp",
         "**.hpp",
-        "**.h"
+        "**.h",
+        "**.ini"
     })
     cpp_common_includes()
     kind("ConsoleApp")
