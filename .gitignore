@@ -5,6 +5,7 @@
 # Sln files
 *.sln
 *.vcxproj
+*.csproj
 *.vcxproj.filters
 
 # User-specific files
@@ -13,14 +14,9 @@
 *.userosscache
 *.sln.docstates
 
-# User-specific files (MonoDevelop/Xamarin Studio)
-*.userprefs
-
 # Build results
 [Dd]ebug/
-[Dd]ebugPublic/
 [Rr]elease/
-[Rr]eleases/
 x64/
 x86/
 bld/
@@ -30,8 +26,9 @@ bld/
 
 # Visual Studio 2015 cache/options directory
 .vs/
-# Uncomment if you have tasks that create the project's static files in wwwroot
-#wwwroot/
+
+# debug binaries
+*.vshost.exe
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -61,9 +58,6 @@ bld/
 *.pidb
 *.svclog
 *.scc
-
-# Chutzpah Test files
-_Chutzpah*
 
 # Visual C++ cache files
 ipch/
