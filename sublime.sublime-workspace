@@ -1,0 +1,565 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"projec",
+				"projectName"
+			],
+			[
+				"src",
+				"SRC_DIR"
+			],
+			[
+				"print",
+				"print_info"
+			],
+			[
+				"s",
+				"solutionName"
+			],
+			[
+				"project",
+				"projectPseudoNym"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "code/_build/scripts/configs/assimp.lua",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "premake-generate",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"spell",
+				"Google Spell Check"
+			],
+			[
+				"packe control insta",
+				"Package Control: Install Package"
+			],
+			[
+				"goog",
+				"Google Spell Check"
+			],
+			[
+				"googl",
+				"Google Spell Check"
+			],
+			[
+				"google",
+				"Google Spell Check"
+			],
+			[
+				"package control ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lua",
+				"FormatLua: Format Lua code"
+			],
+			[
+				"lua ",
+				"FormatLua: Format Lua code"
+			],
+			[
+				"json ",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"package control insta",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/dev/game/code/src/game/app/premake.lua",
+		"/C/dev/game/code/src/system/base/premake.lua",
+		"/C/dev/game/code/src/system/eastl/premake.lua",
+		"/C/dev/game/code/src/packer/render/premake.lua",
+		"/C/dev/game/code/src/system/render/_win/renderdeviced3d.cpp",
+		"/C/dev/game/code/_build/premake5.lua",
+		"/C/dev/game/code/_build/scripts/configs/assimp.lua",
+		"/C/dev/game/code/src/system/render/premake.lua",
+		"/C/dev/game/code/src/runtime/render/premake.lua",
+		"/C/dev/game/engine/code/_build/generate.bat",
+		"/C/dev/game/engine/code/src/system/resource/premake.lua",
+		"/C/dev/game/engine/code/src/system/eastl/premake.lua",
+		"/C/dev/game/engine/code/src/system/base/premake.lua",
+		"/C/dev/game/engine/code/_build/scripts/libdeps.lua",
+		"/C/dev/game/engine/code/src/system/eastl/test/packages/README.md",
+		"/C/dev/game/engine/code/src/runtime/render/premake.lua",
+		"/C/dev/game/engine/code/src/game/app/premake.lua",
+		"/C/dev/game/engine/code/_build/scripts/commoncpp.lua",
+		"/C/dev/game/engine/code/_build/premake5.lua",
+		"/C/dev/game/engine/code/_build/scripts/common.lua",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeEngine/Include/BsGUIElementBase.h",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeEngine/Include/BsGUIElement.h",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeEngine/Include/BsGUIButtonBase.h",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeEngine/Source/BsGUIButton.cpp",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeEngine/Source/BsGUIElement.cpp",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeCore/Include/BsCCollider.h",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeCore/Include/BsCoreThread.h",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeD3D11RenderAPI/Source/BsD3D11Device.cpp",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeD3D11RenderAPI/Include/BsD3D11Device.h",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeD3D11RenderAPI/Source/BsD3D11Driver.cpp",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Source/BansheeD3D11RenderAPI/Source/BsD3D11RenderTexture.cpp",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Documentation/GitHub/compiling.md",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Documentation/Manuals/Managed/index.md",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/Documentation/Manuals/Native/index.md",
+		"/C/dev/BansheeEngine-master/BansheeEngine-master/README.md",
+		"/C/dev/game/engine/code/src/runtime/app/premake.lua",
+		"/C/dev/game/engine/tools/premake/modules/codelite/_preload.lua",
+		"/C/dev/game/engine/code/src/system/eastl/test/packages/EAStdC/source/EAMemory.cpp",
+		"/C/dev/game/engine/code/_build/clean.bat",
+		"/C/dev/game/engine/code/src/system/base/system.base.vcxproj",
+		"/C/dev/mathfu/mathfu-master/readme.md",
+		"/C/dev/directx/DirectX-Graphics-Samples-master/README.md",
+		"/C/dev/directx/Tuxis-Engine-master/Tuxis-Engine-master/README.rdoc",
+		"/C/dev/game/engine/tools/premake/src/actions/vstudio/vs2010_vcxproj.lua",
+		"/C/dev/game/engine/tools/premake/tests/actions/vstudio/vc200x/test_excluded_configs.lua",
+		"/C/dev/game/engine/tools/premake/src/actions/vstudio/vs2010_rules_targets.lua",
+		"/C/dev/game/engine/tools/premake/src/actions/vstudio/_vstudio.lua",
+		"/C/dev/game/engine/tools/premake/src/actions/vstudio/vs200x_vcproj.lua",
+		"/C/dev/game/engine/tools/premake/modules/d/actions/vstudio.lua",
+		"/C/dev/New folder/DirectX-Graphics-Samples-master/README.md",
+		"/C/dev/engine/code/src/system/base/memory/memory.h",
+		"/C/dev/game/engine/code/_build/scripts/commoncs.lua",
+		"/C/dev/game/engine/code/_build/_solutions/staticanalysis.bat",
+		"/C/dev/game/engine/code/_build/_solutions/staticanalysis-first.bat",
+		"/C/dev/game/misc/sonar-scanner-msbuild-2.3.2.573/SonarQube.Analysis.xml",
+		"/C/dev/game/engine/code/_build/_solutions/platform.sln",
+		"/C/dev/game/engine/code/_build/scripts/configure.lua",
+		"/C/dev/game/.gitmodules",
+		"/C/dev/game/engine/sublime_build.sublime-build",
+		"/C/dev/game/engine/sublime.sublime-project",
+		"/C/Users/ShasVan/Downloads/vuejs/Section-Code-Finished/Section Code (Finished)/index.html",
+		"/F/dev/game/engine/code/src/system/eastl/premake.lua",
+		"/C/dev/game/engine/code/external/eastl/CONTRIBUTING.md",
+		"/C/dev/game/engine/code/external/eastl/README.md",
+		"/C/Users/ShasVan/Downloads/vuejs/Section-Code-Finished/Section Code (Finished)/vue.js",
+		"/C/Users/ShasVan/Downloads/vuejs/Finished/Finished/index.html",
+		"/C/Users/ShasVan/Downloads/vuejs/Finished/Finished/app.js",
+		"/C/dev/website/js/main.js",
+		"/C/dev/game/engine/code/src/tools/unittestgenerator/Program.cs",
+		"/C/dev/website/modules/markdownjs/markdown.min.js",
+		"/C/dev/website/data/resume/intro.md",
+		"/C/dev/website/index.html",
+		"/C/dev/website/js/view.js",
+		"/C/dev/game/engine/tools/premake/src/tools/msc.lua",
+		"/C/dev/game/engine/tools/premake/src/actions/vstudio/vs2015.lua",
+		"/C/dev/game/engine/tools/premake/src/actions/vstudio/vs2005.lua",
+		"/C/dev/game/engine/tools/premake/src/tools/dotnet.lua",
+		"/C/dev/game/engine/code/src/tools/unittestgenerator/tools.unittestgenerator.csproj",
+		"/C/dev/game/engine/tools/premake/tests/actions/make/cs/test_embed_files.lua",
+		"/C/dev/game/engine/tools/premake/src/_premake_main.lua",
+		"/C/dev/game/engine/code/src/system/eastl/include/EASTL/functional.h",
+		"/C/dev/game/engine/tools/premake/src/_premake_init.lua",
+		"/C/dev/game/engine/tools/premake/premake5.lua",
+		"/C/dev/game/engine/tools/premake/README.md",
+		"/C/dev/game/engine/tools/premake/src/base/fileconfig.lua",
+		"/C/dev/game/engine/tools/premake-4.x-master/premake-4.x-master/src/actions/vstudio/vs2005_csproj.lua",
+		"/C/dev/game/engine/tools/premake/src/actions/vstudio/vs2005_csproj.lua",
+		"/C/dev/game/engine/code/src/tools/unittestgenerator/premake.lua",
+		"/C/dev/game/engine/code/_build/premake4.lua",
+		"/C/dev/game/engine/code/_build/_manifest.lua",
+		"/C/dev/game/engine/code/_build/vssetup.bat",
+		"/C/dev/game/engine/code/_build/_compile/build_tools.bat.bat",
+		"/C/dev/game/engine/code/_build/_out/_bin/debug/tools.unittestgenerator.vshost.exe.manifest",
+		"/C/dev/HimalayanCB/.gitignore",
+		"/C/dev/HimalayanCB/HimalayanCB/HimalayanAdventures/HimalayanAdventures.userprefs",
+		"/C/dev/HimalayanCB-Bit/root/HimalayanAdventures/Assets/Prefabs/Player/bheem.prefab",
+		"/C/dev/HimalayanCB/HimalayanCB/.gitignore",
+		"/C/Users/HAmmER/Downloads/Chota Bheem Project Documentation/Bhavan Chota Bheem Project Documentation/Chota Bheem Unity Projects/ChotaBheemHim-2D Projects/.gitignore",
+		"/C/dev/engine/code/_build/scripts/actions/_clean.lua",
+		"/C/dev/engine/code/external/premake/premake-4.4-beta5-src/premake-4.4-beta5/src/actions/clean/_clean.lua",
+		"/C/dev/engine/code/_build/vssetup.bat",
+		"/C/dev/engine/code/_build/premake4.lua",
+		"/C/dev/engine/code/external/premake/premake-4.4-beta5-src/premake-4.4-beta5/src/host/premake.c",
+		"/C/dev/engine/code/_build/clean.bat",
+		"/C/dev/engine/code/_build/scripts/common.lua",
+		"/C/dev/engine/code/_build/scripts/commoncs.lua",
+		"/C/dev/engine/code/src/system/eastl/system.eastl.vcxproj.filters",
+		"/C/dev/engine/code/src/system/eastl/premake.lua",
+		"/C/dev/engine/code/src/tools/unittestgenerator/tools.unittestgenerator.csproj",
+		"/C/dev/engine/code/_build/_solutions/tools.sln",
+		"/C/dev/engine/code/external/premake/premake-4.4-beta5-src/premake-4.4-beta5/src/base/bake.lua",
+		"/C/dev/engine/code/_build/scripts/commoncpp.lua",
+		"/C/dev/engine/code/src/tools/unittestgenerator/premake.lua",
+		"/C/dev/engine/code/src/system/base/build_eastl.cpp",
+		"/C/dev/engine/code/_build/scripts/premake4.lua",
+		"/C/dev/engine/code/_build/actions.lua",
+		"/C/dev/engine/code/_build/_generated/tools.sln",
+		"/C/Users/HAmmER/Downloads/remark-develop/remark-develop/README.md",
+		"/C/Users/HAmmER/Downloads/remark-develop/remark-develop/bower.json",
+		"/C/Users/HAmmER/Downloads/remark-develop/remark-develop/boilerplate-local.html",
+		"/C/Users/HAmmER/Downloads/remark-develop/remark-develop/boilerplate-single.html",
+		"/C/Users/HAmmER/Downloads/remark-develop/remark-develop/boilerplate-remote.html",
+		"/C/Users/HAmmER/Downloads/remark-develop/boilerplate-remote.html",
+		"/C/dev/engine/sublime.sublime-project",
+		"/C/dev/engine/code/_build/premake/src/actions/clean/_clean.lua",
+		"/C/dev/engine/code/_build/common.lua",
+		"/C/dev/engine/code/src/generate_engine.lua",
+		"/C/Users/HAmmER/Downloads/premake-4.4-beta5-src/premake-4.4-beta5/src/_premake_main.lua"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 117.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getlinks",
+			"SHAREDLIB",
+			"target_",
+			"WINDOWS\"",
+			"SHAREDLIB",
+			"get;omls",
+			"getlinks(",
+			"elements",
+			"link\"",
+			"vc2010",
+			"link\"",
+			"defines",
+			"cpp_create_unittest",
+			"project",
+			"cfg",
+			"additiona",
+			"additionaldependency",
+			"AdditionalDependencies",
+			"vc2010",
+			"links",
+			"additionalDependencies",
+			"links",
+			"additiona",
+			"libfiles",
+			"links",
+			"elements",
+			"libs",
+			"elements",
+			"clean",
+			"\"clean\"",
+			"_ACTION == \"clean\"",
+			"clean",
+			"includedirs",
+			"DependentUpon",
+			"fname",
+			"buildgenerator",
+			"allowed",
+			"buildgenerator",
+			"buildaction",
+			"doesIncludeCompileBuildAction",
+			"buildaction",
+			"buildgenerator",
+			"buildaction",
+			"buildgenerator",
+			"running action",
+			"buildaction",
+			"print",
+			"generator",
+			"buildgenerator",
+			"generator",
+			"buildgenerator",
+			"buildaction",
+			"generator",
+			"buildaction",
+			"generatpr",
+			"generator",
+			"buildaction",
+			"buildcommands",
+			"cs",
+			"buildcommands",
+			"buildaction",
+			"buildsaction",
+			"getconfig",
+			"<Generator",
+			"<Generator>",
+			"getelements",
+			"buildaction",
+			".generator",
+			".AutoGen",
+			".Generator",
+			"generator",
+			"elements",
+			"generator",
+			"elements",
+			"fileconfig",
+			"fileinfo",
+			"buildoptions",
+			"Generator",
+			"TextTemplatingFilePreprocessor",
+			"Generator",
+			"buildaction",
+			"action",
+			"VCCLCompilerTool",
+			"generate",
+			"PREMAKEDIR",
+			"OPTIONS",
+			"_OPTIONS",
+			"parse_args",
+			"pcall",
+			"objectsdir",
+			"objd",
+			"location",
+			"objectsdir",
+			"configurations",
+			"\"links\"",
+			"objdir",
+			"generatepath",
+			"COMMON_Generate_Path",
+			"PREMAKE_BUILD_DIRECTORY",
+			"COMMON_Project_Type_Library",
+			"capture",
+			"COMMON_Platforms",
+			"COMMON_Configurations",
+			"_ApplyCommonProjectSettings",
+			"_EngineProjectCommons",
+			"CPP_INCLUDE_Project",
+			"CPP_Dependency",
+			"CPP_Include_Dirs",
+			"ENGINE_Include_Dirs",
+			"CPP_Include_Dirs",
+			"ENGINE_Dependency",
+			"ENGINE_Application_Project",
+			"ENGINE_Library_Project",
+			"ENGINE_INCLUDE_Project",
+			"CPP_INCLUDE_Project",
+			"ENGINE_Solution",
+			"CPP_Solution",
+			"ENGINE_Source_Fileset",
+			"ENGINE_Configurations",
+			"ENGINE_Platforms",
+			"ENGINE_Project_Type_DLL",
+			"ENGINE_Project_Type_Application",
+			"ENGINE_Project_Type_Library",
+			"ENGINE_Output_Dir",
+			"ENGINE_Configuration_Release",
+			"CPP_Configuration_Debug",
+			" ENGINE_Configuration_Debug",
+			"CPP_Configuration_Debug"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"_ApplyCommonProjectSettings",
+			"COMMON_INCLUDE_Project",
+			"COMMON_Dependency",
+			"COMMON_Include_Dirs",
+			"CPP_Include_Dirs",
+			"CPP_Dependency",
+			"CPP_Application_Project",
+			"CPP_Library_Project",
+			"CPP_INCLUDE_Project",
+			"CPP_Solution",
+			"_CPPProjectCommons",
+			"CPP_Source_Fileset",
+			"COMMON_Configurations",
+			"COMMON_Platforms",
+			"COMMON_Project_Type_DLL",
+			"COMMON_Project_Type_Application",
+			"COMMON_Project_Type_Library",
+			"CPP_Output_Dir",
+			"CPP_Configuration_Release",
+			"CPP_Configuration_Debug",
+			"CPP_Language",
+			"COMMON_Generate_Path"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "code/_build/scripts/configs/assimp.lua",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 327.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "premake-generate",
+	"project": "sublime.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"dotnet",
+				"premake\\src\\tools\\dotnet.lua"
+			],
+			[
+				"dotn",
+				"premake\\src\\tools\\dotnet.lua"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
