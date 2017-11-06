@@ -1,3 +1,6 @@
 [submodule "engine/code/src/system/eastl"]
 	path = engine/code/src/system/eastl
 	url = https://github.com/vnavbha/EASTL
+[submodule "external/assimp"]
+	path = external/assimp
+	url = https://github.com/assimp/assimp.git
